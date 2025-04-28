@@ -14,3 +14,8 @@ resources:
   # - ../../../base/flink
   # - ../../../base/kafka
   # - ../../../base/knative
+  # - ../../../base/datahub
+  # - ../../../base/mlflow
+  # - ../../../base/traefik
+  # - ../../../base/istio
+  # - ../../../base/gpu-operator

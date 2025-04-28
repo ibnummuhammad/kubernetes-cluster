@@ -9,6 +9,8 @@
     --disable=traefik \
     --disable=metrics-server \
 
+- set current kubernetes cluster to the designated context
+
 - export GITHUB_TOKEN environment variable, then execute below command to integrate cluster to repo
 
     flux bootstrap github --owner ibnummuhammad --repository kubernetes-cluster --path k3s/overlays/k3s --branch main

@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
   - gotk-components.yaml
   - gotk-sync.yaml
-  # - ../../../base/postgres
+  - ../../../base/postgres
   # - ../../../base/mysql
   # - ../../../base/trino
   # - ../../../base/minio

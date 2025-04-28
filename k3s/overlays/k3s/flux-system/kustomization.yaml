@@ -6,5 +6,11 @@ resources:
   - ../../../base/postgres
   - ../../../base/mysql
   - ../../../base/trino
-  # - ../../../base/minio
+  - ../../../base/minio
   - ../../../base/prometheus
+  # - ../../../base/airflow
+  # - ../../../base/rabbitmq
+  # - ../../../base/spark
+  # - ../../../base/flink
+  # - ../../../base/kafka
+  # - ../../../base/knative

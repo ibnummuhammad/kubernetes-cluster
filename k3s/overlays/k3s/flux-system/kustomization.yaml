@@ -7,4 +7,4 @@ resources:
   - ../../../base/mysql
   - ../../../base/trino
   # - ../../../base/minio
-  # - ../../../base/prometheus
+  - ../../../base/prometheus

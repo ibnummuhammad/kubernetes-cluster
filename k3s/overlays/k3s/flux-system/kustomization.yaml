@@ -16,7 +16,8 @@ resources:
   # - ../../../base/beam
   # - ../../../base/iceberg
   # - ../../../base/metabase
-  # - ../../../base/kubeflow
+  # - ../../../base/kubeflow-pipelines
+  # - ../../../base/kubeflow-notebooks
   # - ../../../base/numaflow
   # - ../../../base/neo4j
   # - ../../../base/milvus

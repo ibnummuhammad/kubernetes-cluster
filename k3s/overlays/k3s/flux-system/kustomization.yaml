@@ -26,6 +26,7 @@ resources:
   # - ../../../base/knative
   # - ../../../base/datahub
   # - ../../../base/mlflow
+  # - ../../../base/vault
   # - ../../../base/traefik
   # - ../../../base/istio
   # - ../../../base/gpu-operator

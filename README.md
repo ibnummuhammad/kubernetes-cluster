@@ -11,6 +11,11 @@
     --advertise-address=192.168.100.197 \
     --tls-san=192.168.100.197 \
 
+- then execute 
+
+    sudo systemctl daemon-reload
+    sudo systemctl restart k3s
+
 - set current kubernetes cluster to the designated context
 
 - export GITHUB_TOKEN environment variable, then execute below command to integrate cluster to repo

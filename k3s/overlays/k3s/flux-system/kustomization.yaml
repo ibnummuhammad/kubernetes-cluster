@@ -16,6 +16,10 @@ resources:
   # - ../../../base/beam
   # - ../../../base/iceberg
   # - ../../../base/metabase
+  # - ../../../base/kubeflow
+  # - ../../../base/numaflow
+  # - ../../../base/neo4j
+  # - ../../../base/milvus
   # - ../../../base/kafka
   # - ../../../base/knative
   # - ../../../base/datahub

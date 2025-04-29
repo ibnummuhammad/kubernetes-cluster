@@ -4,3 +4,4 @@ resources:
   - namespaces.yaml
   - customresourcedefinitions.yaml
   - serviceaccounts.yaml
+  - clusterroles.yaml

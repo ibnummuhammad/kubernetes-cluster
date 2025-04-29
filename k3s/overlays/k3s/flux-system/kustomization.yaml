@@ -25,6 +25,8 @@ resources:
   # - ../../../base/milvus
   # - ../../../base/knative
   # - ../../../base/datahub
+  # - ../../../base/hadoop
+  # - ../../../base/hive
   # - ../../../base/mlflow
   # - ../../../base/jenkins
   # - ../../../base/vault

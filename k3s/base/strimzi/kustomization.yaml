@@ -8,3 +8,4 @@ resources:
   - configmaps.yaml
   - clusterrolebindings.yaml
   - rolebindings.yaml
+  - deployments.yaml

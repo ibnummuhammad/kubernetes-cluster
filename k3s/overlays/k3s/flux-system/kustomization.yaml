@@ -10,7 +10,7 @@ resources:
   - ../../../base/prometheus
   - ../../../base/spark
   - ../../../base/strimzi
-  - ../../../base/kafka
+  # - ../../../base/kafka
   # - ../../../base/airflow
   # - ../../../base/dbt
   # - ../../../base/rabbitmq

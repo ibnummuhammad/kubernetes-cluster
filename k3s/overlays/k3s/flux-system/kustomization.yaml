@@ -10,6 +10,7 @@ resources:
   - ../../../base/prometheus
   - ../../../base/spark
   - ../../../base/strimzi
+  - ../../../base/kafka
   # - ../../../base/airflow
   # - ../../../base/dbt
   # - ../../../base/rabbitmq
@@ -22,7 +23,6 @@ resources:
   # - ../../../base/numaflow
   # - ../../../base/neo4j
   # - ../../../base/milvus
-  # - ../../../base/kafka
   # - ../../../base/knative
   # - ../../../base/datahub
   # - ../../../base/mlflow

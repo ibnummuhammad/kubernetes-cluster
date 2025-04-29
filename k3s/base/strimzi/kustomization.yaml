@@ -5,3 +5,4 @@ resources:
   - customresourcedefinitions.yaml
   - serviceaccounts.yaml
   - clusterroles.yaml
+  - configmaps.yaml

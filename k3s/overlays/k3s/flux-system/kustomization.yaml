@@ -26,6 +26,7 @@ resources:
   # - ../../../base/knative
   # - ../../../base/datahub
   # - ../../../base/mlflow
+  # - ../../../base/jenkins
   # - ../../../base/vault
   # - ../../../base/traefik
   # - ../../../base/istio

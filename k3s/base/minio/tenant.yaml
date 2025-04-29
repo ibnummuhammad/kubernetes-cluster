@@ -197,7 +197,7 @@ spec:
             - ReadWriteOnce
           resources:
             requests:
-              storage: 1Ti
+              storage: 10Gi
           storageClassName: local-path
         status: {}
       ## Configure Pod's security context

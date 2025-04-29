@@ -13,6 +13,9 @@ resources:
   # - ../../../base/dbt
   # - ../../../base/rabbitmq
   # - ../../../base/flink
+  # - ../../../base/beam
+  # - ../../../base/iceberg
+  # - ../../../base/metabase
   # - ../../../base/kafka
   # - ../../../base/knative
   # - ../../../base/datahub

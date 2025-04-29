@@ -8,6 +8,8 @@
 
     --disable=traefik \
     --disable=metrics-server \
+    --advertise-address=192.168.100.197 \
+    --tls-san=192.168.100.197 \
 
 - set current kubernetes cluster to the designated context
 

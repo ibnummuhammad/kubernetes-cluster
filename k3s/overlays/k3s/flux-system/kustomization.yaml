@@ -5,7 +5,7 @@ resources:
   - gotk-sync.yaml
   - ../../../base/postgres
   - ../../../base/mysql
-  # - ../../../base/trino
+  - ../../../base/trino
   - ../../../base/minio
   - ../../../base/prometheus
   # - ../../../base/airflow

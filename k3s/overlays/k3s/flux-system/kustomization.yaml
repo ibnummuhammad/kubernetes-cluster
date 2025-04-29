@@ -8,9 +8,9 @@ resources:
   - ../../../base/trino
   - ../../../base/minio
   - ../../../base/prometheus
+  - ../../../base/spark
   # - ../../../base/airflow
   # - ../../../base/rabbitmq
-  # - ../../../base/spark
   # - ../../../base/flink
   # - ../../../base/kafka
   # - ../../../base/knative

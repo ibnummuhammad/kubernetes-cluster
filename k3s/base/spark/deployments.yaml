@@ -1,0 +1,133 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spark-operator-controller
+  namespace: spark
+  labels:
+    helm.sh/chart: spark-operator-2.0.2
+    app.kubernetes.io/name: spark-operator
+    app.kubernetes.io/instance: spark-operator
+    app.kubernetes.io/version: "2.0.2"
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/component: controller
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: spark-operator
+      app.kubernetes.io/instance: spark-operator
+      app.kubernetes.io/component: controller
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: spark-operator
+        app.kubernetes.io/instance: spark-operator
+        app.kubernetes.io/component: controller
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8080"
+        prometheus.io/path: /metrics
+    spec:
+      containers:
+        - name: spark-operator-controller
+          image: docker.io/kubeflow/spark-operator:2.0.2
+          imagePullPolicy: IfNotPresent
+          args:
+            - controller
+            - start
+            - --zap-log-level=info
+            - --namespaces=spark
+            - --controller-threads=10
+            - --enable-ui-service=true
+            - --enable-metrics=true
+            - --metrics-bind-address=:8080
+            - --metrics-endpoint=/metrics
+            - --metrics-prefix=
+            - --metrics-labels=app_type
+            - --leader-election=true
+            - --leader-election-lock-name=spark-operator-controller-lock
+            - --leader-election-lock-namespace=spark
+            - --workqueue-ratelimiter-bucket-qps=50
+            - --workqueue-ratelimiter-bucket-size=500
+            - --workqueue-ratelimiter-max-delay=6h
+          ports:
+            - name: "metrics"
+              containerPort: 8080
+          livenessProbe:
+            httpGet:
+              port: 8081
+              scheme: HTTP
+              path: /healthz
+          readinessProbe:
+            httpGet:
+              port: 8081
+              scheme: HTTP
+              path: /readyz
+      serviceAccountName: spark-operator-controller
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spark-operator-webhook
+  namespace: spark
+  labels:
+    helm.sh/chart: spark-operator-2.0.2
+    app.kubernetes.io/name: spark-operator
+    app.kubernetes.io/instance: spark-operator
+    app.kubernetes.io/version: "2.0.2"
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/component: webhook
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: spark-operator
+      app.kubernetes.io/instance: spark-operator
+      app.kubernetes.io/component: webhook
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: spark-operator
+        app.kubernetes.io/instance: spark-operator
+        app.kubernetes.io/component: webhook
+    spec:
+      containers:
+        - name: spark-operator-webhook
+          image: docker.io/kubeflow/spark-operator:2.0.2
+          imagePullPolicy: IfNotPresent
+          args:
+            - webhook
+            - start
+            - --zap-log-level=info
+            - --namespaces=spark
+            - --webhook-secret-name=spark-operator-webhook-certs
+            - --webhook-secret-namespace=spark
+            - --webhook-svc-name=spark-operator-webhook-svc
+            - --webhook-svc-namespace=spark
+            - --webhook-port=9443
+            - --mutating-webhook-name=spark-operator-webhook
+            - --validating-webhook-name=spark-operator-webhook
+            - --enable-metrics=true
+            - --metrics-bind-address=:8080
+            - --metrics-endpoint=/metrics
+            - --metrics-prefix=
+            - --metrics-labels=app_type
+            - --leader-election=true
+            - --leader-election-lock-name=spark-operator-webhook-lock
+            - --leader-election-lock-namespace=spark
+          ports:
+            - name: "webhook"
+              containerPort: 9443
+            - name: "metrics"
+              containerPort: 8080
+          livenessProbe:
+            httpGet:
+              port: 8081
+              scheme: HTTP
+              path: /healthz
+          readinessProbe:
+            httpGet:
+              port: 8081
+              scheme: HTTP
+              path: /readyz
+      serviceAccountName: spark-operator-webhook
+---
+

@@ -9,6 +9,7 @@ resources:
   - ../../../base/minio
   - ../../../base/prometheus
   - ../../../base/spark
+  - ../../../base/strimzi
   # - ../../../base/airflow
   # - ../../../base/dbt
   # - ../../../base/rabbitmq

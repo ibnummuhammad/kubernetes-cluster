@@ -5,7 +5,7 @@ metadata:
   labels:
     app: oauth2-proxy
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app.kubernetes.io/name: oauth2-proxy

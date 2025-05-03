@@ -21,6 +21,7 @@ resources:
   # - ../../../base/kubeflow-pipelines
 
   - ../../../base/cert-manager
+  - ../../../base/istio
   # - ../../../base/kubeflow-notebooks
 
   # - ../../../base/numaflow
@@ -34,5 +35,4 @@ resources:
   # - ../../../base/jenkins
   # - ../../../base/vault
   # - ../../../base/traefik
-  # - ../../../base/istio
   # - ../../../base/gpu-operator

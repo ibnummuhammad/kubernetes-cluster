@@ -26,7 +26,7 @@ resources:
   - ../../../base/oauth2-proxy
   - ../../../base/dex
   - ../../../base/knative
-  # - ../../../base/kubeflow-notebooks
+  - ../../../base/kubeflow-notebooks
 
   # - ../../../base/numaflow
   # - ../../../base/neo4j

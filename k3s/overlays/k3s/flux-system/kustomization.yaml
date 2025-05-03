@@ -4,7 +4,7 @@ resources:
   - gotk-components.yaml
   - gotk-sync.yaml
   - ../../../base/metrics-server
-  - ../../../base/postgres
+  # - ../../../base/postgres
   # - ../../../base/mysql
   # - ../../../base/trino
   # - ../../../base/minio
@@ -21,12 +21,12 @@ resources:
   # - ../../../base/metabase
   # - ../../../base/kubeflow-pipelines
 
-  - ../../../base/cert-manager
-  - ../../../base/istio
-  - ../../../base/oauth2-proxy
-  - ../../../base/dex
-  - ../../../base/knative
-  - ../../../base/kubeflow-notebooks
+  # - ../../../base/cert-manager
+  # - ../../../base/istio
+  # - ../../../base/oauth2-proxy
+  # - ../../../base/dex
+  # - ../../../base/knative
+  # - ../../../base/kubeflow-notebooks
 
   # - ../../../base/numaflow
   # - ../../../base/neo4j

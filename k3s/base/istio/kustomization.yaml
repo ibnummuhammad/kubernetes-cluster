@@ -5,3 +5,4 @@ resources:
   - crds.yaml
   - install/overlays/oauth2-proxy
   - cluster-local-gateway/base
+  - kubeflow-istio-resources

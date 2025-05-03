@@ -25,12 +25,12 @@ resources:
   - ../../../base/istio
   - ../../../base/oauth2-proxy
   - ../../../base/dex
+  - ../../../base/knative
   # - ../../../base/kubeflow-notebooks
 
   # - ../../../base/numaflow
   # - ../../../base/neo4j
   # - ../../../base/milvus
-  # - ../../../base/knative
   # - ../../../base/datahub
   # - ../../../base/hadoop
   # - ../../../base/hive

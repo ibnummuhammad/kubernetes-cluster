@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - crds.yaml
+  - install/overlays/oauth2-proxy

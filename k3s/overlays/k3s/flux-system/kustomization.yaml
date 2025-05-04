@@ -19,7 +19,6 @@ resources:
   # - ../../../base/beam
   # - ../../../base/iceberg
   # - ../../../base/metabase
-  # - ../../../base/kubeflow-pipelines
 
   - ../../../base/cert-manager
   - ../../../base/istio
@@ -27,6 +26,10 @@ resources:
   - ../../../base/dex
   - ../../../base/knative
   - ../../../base/kubeflow-notebooks
+  - ../../../base/metacontroller
+  - ../../../base/argo
+  - ../../../base/mysql-kubeflow
+  - ../../../base/kubeflow-pipelines
 
   # - ../../../base/numaflow
   # - ../../../base/neo4j

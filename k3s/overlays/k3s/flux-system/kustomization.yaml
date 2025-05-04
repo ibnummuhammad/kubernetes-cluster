@@ -22,7 +22,7 @@ resources:
   # - ../../../base/kubeflow-pipelines
 
   - ../../../base/cert-manager
-  # - ../../../base/istio
+  - ../../../base/istio
   # - ../../../base/oauth2-proxy
   # - ../../../base/dex
   # - ../../../base/knative

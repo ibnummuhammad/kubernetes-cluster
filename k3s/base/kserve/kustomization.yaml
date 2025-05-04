@@ -4,3 +4,4 @@ resources:
   # Install Kserve in kubeflow namespace
   - kserve_kubeflow.yaml
   - kserve-cluster-resources.yaml
+  - models-web-app/overlays/kubeflow

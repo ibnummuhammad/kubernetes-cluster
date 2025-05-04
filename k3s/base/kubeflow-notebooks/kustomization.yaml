@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
 - namespace.yaml
 - cluster-roles.yaml
+- centraldashboard/overlays/oauth2-proxy

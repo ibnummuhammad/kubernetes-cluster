@@ -26,10 +26,10 @@ resources:
   - ../../../base/dex
   - ../../../base/knative
   - ../../../base/kubeflow-notebooks
-  - ../../../base/metacontroller
-  - ../../../base/argo
-  - ../../../base/mysql-kubeflow
-  - ../../../base/kubeflow-pipelines
+  # - ../../../base/metacontroller
+  # - ../../../base/argo
+  # - ../../../base/mysql-kubeflow
+  # - ../../../base/kubeflow-pipelines
 
   # - ../../../base/numaflow
   # - ../../../base/neo4j

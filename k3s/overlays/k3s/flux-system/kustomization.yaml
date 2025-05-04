@@ -21,7 +21,7 @@ resources:
   # - ../../../base/metabase
   # - ../../../base/kubeflow-pipelines
 
-  # - ../../../base/cert-manager
+  - ../../../base/cert-manager
   # - ../../../base/istio
   # - ../../../base/oauth2-proxy
   # - ../../../base/dex

@@ -2,12 +2,13 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: kubeflow
 resources:
-  - metadata-grpc-configmap.yaml
-  - metadata-grpc-deployment.yaml
-  - metadata-grpc-service.yaml
-  - metadata-envoy-deployment.yaml
-  - metadata-envoy-service.yaml
-  - metadata-grpc-sa.yaml
-images:
-  - name: ghcr.io/kubeflow/kfp-metadata-envoy
-    newTag: 2.4.1
+- cluster-role.yaml
+- cluster-role-binding.yaml
+- crd.yaml
+- service-account.yaml
+- stateful-set.yaml
+commonLabels:
+  kustomize.component: metacontroller
+# Update metacontroller CRD:
+# Copy the upstream file to crd.yaml in this folder.
+# Upstream file: https://github.com/metacontroller/metacontroller/blob/master/manifests/production/metacontroller-crds-v1.yaml

@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
   - gotk-components.yaml
   - gotk-sync.yaml
-  - ../../../base/metrics-server
+  # - ../../../base/metrics-server
   # - ../../../base/postgres
   # - ../../../base/mysql
   # - ../../../base/trino
@@ -23,14 +23,14 @@ resources:
   # - ../../../base/metacontroller
   # - ../../../base/argo
 
-  - ../../../base/cert-manager
-  - ../../../base/istio
-  - ../../../base/oauth2-proxy
-  - ../../../base/dex
-  - ../../../base/knative
-  - ../../../base/kubeflow-notebooks
-  - ../../../base/kubeflow-pipelines
-  - ../../../base/kserve
+  # - ../../../base/cert-manager
+  # - ../../../base/istio
+  # - ../../../base/oauth2-proxy
+  # - ../../../base/dex
+  # - ../../../base/knative
+  # - ../../../base/kubeflow-notebooks
+  # - ../../../base/kubeflow-pipelines
+  # - ../../../base/kserve
 
   # - ../../../base/numaflow
   # - ../../../base/neo4j

@@ -23,9 +23,9 @@ resources:
 
   - ../../../base/cert-manager
   - ../../../base/istio
-  # - ../../../base/oauth2-proxy
-  # - ../../../base/dex
-  # - ../../../base/knative
+  - ../../../base/oauth2-proxy
+  - ../../../base/dex
+  - ../../../base/knative
   - ../../../base/kubeflow-notebooks
 
   # - ../../../base/numaflow

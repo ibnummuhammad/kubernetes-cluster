@@ -28,7 +28,7 @@ resources:
   - ../../../base/kubeflow-notebooks
   # - ../../../base/metacontroller
   # - ../../../base/argo
-  # - ../../../base/kubeflow-pipelines
+  - ../../../base/kubeflow-pipelines
 
   # - ../../../base/numaflow
   # - ../../../base/neo4j

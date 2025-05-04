@@ -30,6 +30,7 @@ resources:
   - ../../../base/knative
   - ../../../base/kubeflow-notebooks
   - ../../../base/kubeflow-pipelines
+  - ../../../kserve
 
   # - ../../../base/numaflow
   # - ../../../base/neo4j

@@ -3,9 +3,9 @@ kind: Kustomization
 
 resources:
   - ../../metacontroller
-  - ../../base/installs/multi-user
-  - ../../base/metadata/base
-  - ../../base/metadata/options/istio
+  - ../base/installs/multi-user
+  - ../base/metadata/base
+  - ../base/metadata/options/istio
   - ../../argo
   - ../../mysql-kubeflow
   - ../../mysql-kubeflow/options/istio

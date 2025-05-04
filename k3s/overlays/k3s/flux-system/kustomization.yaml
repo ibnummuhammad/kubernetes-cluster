@@ -8,7 +8,7 @@ resources:
   # - ../../../base/mysql
   # - ../../../base/trino
   # - ../../../base/minio
-  - ../../../base/prometheus
+  # - ../../../base/prometheus
   # - ../../../base/spark
   # - ../../../base/strimzi
   # - ../../../base/kafka
@@ -20,15 +20,15 @@ resources:
   # - ../../../base/iceberg
   # - ../../../base/metabase
 
-  - ../../../base/cert-manager
-  - ../../../base/istio
-  - ../../../base/oauth2-proxy
-  - ../../../base/dex
-  - ../../../base/knative
-  - ../../../base/kubeflow-notebooks
+  # - ../../../base/cert-manager
+  # - ../../../base/istio
+  # - ../../../base/oauth2-proxy
+  # - ../../../base/dex
+  # - ../../../base/knative
+  # - ../../../base/kubeflow-notebooks
   # - ../../../base/metacontroller
   # - ../../../base/argo
-  - ../../../base/kubeflow-pipelines
+  # - ../../../base/kubeflow-pipelines
 
   # - ../../../base/numaflow
   # - ../../../base/neo4j

@@ -7,10 +7,12 @@ resources:
   # - ../../../base/metrics-server
 
   - ../../../base/postgres
+  - ../../../base/vault
+  - ../../../base/prometheus
+  - ../../../base/jenkins
   # - ../../../base/mysql
   # - ../../../base/trino
   # - ../../../base/minio
-  - ../../../base/prometheus
   # - ../../../base/spark
   # - ../../../base/strimzi
   # - ../../../base/kafka
@@ -47,7 +49,5 @@ resources:
   # - ../../../base/hadoop
   # - ../../../base/hive
   # - ../../../base/mlflow
-  # - ../../../base/jenkins
-  # - ../../../base/vault
   # - ../../../base/traefik
   # - ../../../base/gpu-operator

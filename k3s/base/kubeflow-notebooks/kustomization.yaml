@@ -4,3 +4,4 @@ resources:
 - namespace.yaml
 - cluster-roles.yaml
 - centraldashboard/overlays/oauth2-proxy
+- admission-webhook/overlays/cert-manager

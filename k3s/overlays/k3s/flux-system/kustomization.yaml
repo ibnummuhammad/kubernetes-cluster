@@ -36,6 +36,7 @@ resources:
   - ../../../base/kubeflow-pipelines
   - ../../../base/kserve
   - ../../../base/tensorboard
+  - ../../../base/kubeflow-trainer
 
   # - ../../../base/numaflow
   # - ../../../base/neo4j

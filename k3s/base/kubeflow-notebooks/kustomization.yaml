@@ -9,3 +9,4 @@ resources:
 - jupyter-web-app/overlays/istio
 - pvcviewer-controller/base
 - profiles/overlays/kubeflow
+- volumes-web-app/overlays/istio

@@ -10,3 +10,12 @@ spec:
           envFrom:
             - configMapRef:
                 name: tensorboard-controller-config
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: kubernetes.io/arch
+                    operator: In
+                    values:
+                      - amd64

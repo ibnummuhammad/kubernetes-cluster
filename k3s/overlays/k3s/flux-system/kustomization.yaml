@@ -49,5 +49,5 @@ resources:
   # - ../../../base/mlflow
   - ../../../base/jenkins
   - ../../../base/vault
-  - ../../../base/traefik
+  # - ../../../base/traefik
   # - ../../../base/gpu-operator

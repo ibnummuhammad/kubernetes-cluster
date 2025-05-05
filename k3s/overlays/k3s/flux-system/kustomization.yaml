@@ -6,17 +6,17 @@ resources:
 
   # - ../../../base/metrics-server
 
-  - ../../../base/postgres
+  # - ../../../base/postgres
   # - ../../../base/mysql
-  - ../../../base/trino
+  # - ../../../base/trino
   # - ../../../base/minio
-  - ../../../base/prometheus
+  # - ../../../base/prometheus
   # - ../../../base/spark
-  - ../../../base/strimzi
+  # - ../../../base/strimzi
   # - ../../../base/kafka
   # - ../../../base/airflow
   # - ../../../base/dbt
-  - ../../../base/rabbitmq
+  # - ../../../base/rabbitmq
   # - ../../../base/flink
   # - ../../../base/beam
   # - ../../../base/iceberg
@@ -40,14 +40,14 @@ resources:
   # - ../../../base/tensorboard
   # - ../../../base/kubeflow-trainer
 
-  - ../../../base/numaflow
+  # - ../../../base/numaflow
   # - ../../../base/neo4j
   # - ../../../base/milvus
   # - ../../../base/datahub
   # - ../../../base/hadoop
   # - ../../../base/hive
   # - ../../../base/mlflow
-  - ../../../base/jenkins
-  - ../../../base/vault
+  # - ../../../base/jenkins
+  # - ../../../base/vault
   # - ../../../base/traefik
   # - ../../../base/gpu-operator

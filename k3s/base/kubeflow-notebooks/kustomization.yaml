@@ -7,3 +7,4 @@ resources:
 - admission-webhook/overlays/cert-manager
 - notebook-controller/overlays/kubeflow
 - jupyter-web-app/overlays/istio
+- pvcviewer-controller/base

@@ -3,12 +3,12 @@ kind: Kustomization
 resources:
   - gotk-components.yaml
   - gotk-sync.yaml
-  - ../../../base/metrics-server
+  # - ../../../base/metrics-server
   # - ../../../base/postgres
   # - ../../../base/mysql
   # - ../../../base/trino
   # - ../../../base/minio
-  # - ../../../base/prometheus
+  - ../../../base/prometheus
   # - ../../../base/spark
   # - ../../../base/strimzi
   # - ../../../base/kafka

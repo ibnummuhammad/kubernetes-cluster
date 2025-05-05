@@ -11,7 +11,7 @@ resources:
   - ../../../base/trino
   # - ../../../base/minio
   - ../../../base/prometheus
-  - ../../../base/spark
+  # - ../../../base/spark
   - ../../../base/strimzi
   # - ../../../base/kafka
   # - ../../../base/airflow

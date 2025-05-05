@@ -5,3 +5,4 @@ resources:
 - cluster-roles.yaml
 - centraldashboard/overlays/oauth2-proxy
 - admission-webhook/overlays/cert-manager
+- notebook-controller/overlays/kubeflow

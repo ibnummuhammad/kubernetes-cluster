@@ -14,7 +14,7 @@ resources:
   # - ../../../base/kafka
   # - ../../../base/airflow
   # - ../../../base/dbt
-  # - ../../../base/rabbitmq
+  - ../../../base/rabbitmq
   # - ../../../base/flink
   # - ../../../base/beam
   # - ../../../base/iceberg

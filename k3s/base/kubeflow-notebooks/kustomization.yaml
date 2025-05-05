@@ -8,3 +8,4 @@ resources:
 - notebook-controller/overlays/kubeflow
 - jupyter-web-app/overlays/istio
 - pvcviewer-controller/base
+- profiles/overlays/kubeflow

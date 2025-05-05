@@ -75,6 +75,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: vault-injector-rolebinding
+  namespace: vault
   labels:
     app.kubernetes.io/name: vault-injector
     app.kubernetes.io/instance: vault

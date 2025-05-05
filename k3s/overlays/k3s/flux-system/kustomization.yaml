@@ -6,7 +6,7 @@ resources:
   # - ../../../base/metrics-server
   # - ../../../base/postgres
   # - ../../../base/mysql
-  # - ../../../base/trino
+  - ../../../base/trino
   # - ../../../base/minio
   - ../../../base/prometheus
   - ../../../base/spark

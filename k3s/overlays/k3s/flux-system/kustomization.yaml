@@ -45,7 +45,7 @@ resources:
   # - ../../../base/hadoop
   # - ../../../base/hive
   # - ../../../base/mlflow
-  # - ../../../base/jenkins
+  - ../../../base/jenkins
   # - ../../../base/vault
   # - ../../../base/traefik
   # - ../../../base/gpu-operator

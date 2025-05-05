@@ -38,7 +38,7 @@ resources:
   - ../../../base/tensorboard
   - ../../../base/kubeflow-trainer
 
-  # - ../../../base/numaflow
+  - ../../../base/numaflow
   # - ../../../base/neo4j
   # - ../../../base/milvus
   # - ../../../base/datahub

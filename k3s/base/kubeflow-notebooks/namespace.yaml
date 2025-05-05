@@ -5,3 +5,9 @@ metadata:
   labels:
     control-plane: kubeflow
     istio-injection: enabled
+---
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kubeflow-user-example-com

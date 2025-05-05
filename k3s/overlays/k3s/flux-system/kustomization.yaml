@@ -10,7 +10,7 @@ resources:
   # - ../../../base/minio
   - ../../../base/prometheus
   - ../../../base/spark
-  # - ../../../base/strimzi
+  - ../../../base/strimzi
   # - ../../../base/kafka
   # - ../../../base/airflow
   # - ../../../base/dbt

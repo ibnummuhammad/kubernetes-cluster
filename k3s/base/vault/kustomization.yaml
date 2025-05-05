@@ -1,0 +1,12 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - namespaces.yaml
+  - injector-deployment.yaml
+  - injector-mutating-webhook.yaml
+  - injector-rbac.yaml
+  - injector-service.yaml
+  - injector-leader-extras.yaml

@@ -6,7 +6,7 @@ resources:
 
   # - ../../../base/metrics-server
 
-  - ../../../base/postgres
+  # - ../../../base/postgres
   - ../../../base/vault
   - ../../../base/prometheus
   - ../../../base/jenkins

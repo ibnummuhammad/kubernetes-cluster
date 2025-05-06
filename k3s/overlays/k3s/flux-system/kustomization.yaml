@@ -11,6 +11,7 @@ resources:
   - ../../../base/vault
   - ../../../base/prometheus
   - ../../../base/minio
+  - ../../../base/jenkins
 
   - ../../../base/cert-manager
   - ../../../base/kubeflow
@@ -32,7 +33,6 @@ resources:
   # - ../../../base/tensorboard
   # - ../../../base/kubeflow-trainer
 
-  # - ../../../base/jenkins
   # - ../../../base/traefik
   # - ../../../base/spark
   # - ../../../base/metacontroller

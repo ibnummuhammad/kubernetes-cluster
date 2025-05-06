@@ -6,16 +6,16 @@ resources:
 
   # - ../../../base/metrics-server
 
-  # - ../../../base/mysql
+  - ../../../base/mysql
   - ../../../base/prometheus
   - ../../../base/traefik
   - ../../../base/minio
   - ../../../base/vault
   - ../../../base/jenkins
+  # - ../../../base/gpu-operator
   # - ../../../base/redis
   # - ../../../base/postgres
   # - ../../../base/knative
-  # - ../../../base/gpu-operator
 
   # - ../../../base/cert-manager
   # - ../../../base/kubeflow

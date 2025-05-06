@@ -11,7 +11,7 @@ resources:
   - ../../../base/vault
   - ../../../base/prometheus
   - ../../../base/minio
-  # - ../../../base/jenkins
+  - ../../../base/jenkins
   - ../../../base/knative
 
   - ../../../base/cert-manager

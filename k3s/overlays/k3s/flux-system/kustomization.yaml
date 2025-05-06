@@ -12,23 +12,24 @@ resources:
   - ../../../base/prometheus
   # - ../../../base/minio
 
-  # - ../../../base/trino
-  # - ../../../base/strimzi
-  # - ../../../base/kafka
-  # - ../../../base/rabbitmq
-  # - ../../../base/numaflow
-
   - ../../../base/cert-manager
   - ../../../base/kubeflow
   - ../../../base/istio
   - ../../../base/oauth2-proxy
   - ../../../base/dex
-  # - ../../../base/knative
+  - ../../../base/kubeflow-centraldashboard
   # - ../../../base/kubeflow-notebooks
   # - ../../../base/kubeflow-pipelines
   # - ../../../base/kserve
   # - ../../../base/tensorboard
   # - ../../../base/kubeflow-trainer
+
+  # - ../../../base/knative
+  # - ../../../base/trino
+  # - ../../../base/strimzi
+  # - ../../../base/kafka
+  # - ../../../base/rabbitmq
+  # - ../../../base/numaflow
 
   # - ../../../base/traefik
   # - ../../../base/spark

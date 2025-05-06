@@ -2,7 +2,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - cluster-roles.yaml
-  - centraldashboard/overlays/oauth2-proxy
   - admission-webhook/overlays/cert-manager
   - notebook-controller/overlays/kubeflow
   - jupyter-web-app/overlays/istio

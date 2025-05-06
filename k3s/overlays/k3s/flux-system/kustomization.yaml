@@ -13,7 +13,7 @@ resources:
   # - ../../../base/redis
   # - ../../../base/jenkins
   # - ../../../base/postgres
-  # - ../../../base/vault
+  - ../../../base/vault
   # - ../../../base/knative
   # - ../../../base/gpu-operator
 

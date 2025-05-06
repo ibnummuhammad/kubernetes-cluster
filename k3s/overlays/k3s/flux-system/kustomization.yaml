@@ -9,7 +9,7 @@ resources:
   # - ../../../base/postgres
   - ../../../base/vault
   - ../../../base/prometheus
-  # - ../../../base/jenkins
+  - ../../../base/jenkins
   # - ../../../base/mysql
   # - ../../../base/trino
   # - ../../../base/minio

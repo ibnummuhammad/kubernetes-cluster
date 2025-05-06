@@ -10,10 +10,8 @@ resources:
   - ../../../base/mysql
   - ../../../base/vault
   - ../../../base/prometheus
-  - ../../../base/jenkins
   # - ../../../base/traefik
   # - ../../../base/minio
-  # - ../../../base/gpu-operator
 
   # - ../../../base/trino
   # - ../../../base/strimzi
@@ -22,6 +20,7 @@ resources:
   # - ../../../base/numaflow
 
   - ../../../base/cert-manager
+  - ../../../base/kubeflow
   # - ../../../base/istio
   # - ../../../base/oauth2-proxy
   # - ../../../base/dex
@@ -33,9 +32,10 @@ resources:
   # - ../../../base/kubeflow-trainer
 
   # - ../../../base/spark
+  # - ../../../base/jenkins
   # - ../../../base/metacontroller
   # - ../../../base/argo
-
+  # - ../../../base/gpu-operator
   # - ../../../base/neo4j
   # - ../../../base/milvus
   # - ../../../base/datahub

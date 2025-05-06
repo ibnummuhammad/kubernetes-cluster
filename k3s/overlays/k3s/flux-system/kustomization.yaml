@@ -14,6 +14,7 @@ resources:
   - ../../../base/jenkins
   - ../../../base/knative
   - ../../../base/traefik
+  - ../../../base/gpu-operator
 
   - ../../../base/cert-manager
   - ../../../base/kubeflow
@@ -34,7 +35,7 @@ resources:
   # - ../../../base/tensorboard
   # - ../../../base/kubeflow-trainer
 
-  - ../../../base/gpu-operator
+  # - ../../../base/atlantis
   # - ../../../base/elk
   # - ../../../base/spark
   # - ../../../base/metacontroller

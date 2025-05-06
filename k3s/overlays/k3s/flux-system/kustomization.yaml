@@ -6,8 +6,7 @@ resources:
 
   # - ../../../base/metrics-server
 
-  - ../../../base/mysql
-  - ../../../base/postgres
+  # - ../../../base/mysql
   - ../../../base/prometheus
   - ../../../base/traefik
   - ../../../base/minio
@@ -15,6 +14,7 @@ resources:
   - ../../../base/jenkins
   # - ../../../base/gpu-operator
   # - ../../../base/redis
+  # - ../../../base/postgres
   # - ../../../base/knative
 
   # - ../../../base/cert-manager

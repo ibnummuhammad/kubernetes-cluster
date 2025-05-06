@@ -10,7 +10,7 @@ resources:
   - ../../../base/mysql
   - ../../../base/vault
   - ../../../base/prometheus
-  # - ../../../base/minio
+  - ../../../base/minio
 
   - ../../../base/cert-manager
   - ../../../base/kubeflow

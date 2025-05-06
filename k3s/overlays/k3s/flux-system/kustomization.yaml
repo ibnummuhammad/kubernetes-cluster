@@ -18,7 +18,7 @@ resources:
   - ../../../base/oauth2-proxy
   - ../../../base/dex
   - ../../../base/kubeflow-centraldashboard
-  # - ../../../base/kubeflow-notebooks
+  - ../../../base/kubeflow-notebooks
 
   # - ../../../base/knative
   # - ../../../base/trino

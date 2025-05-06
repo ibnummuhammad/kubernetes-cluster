@@ -13,6 +13,7 @@ resources:
   - ../../../base/minio
   - ../../../base/jenkins
   - ../../../base/knative
+  - ../../../base/traefik
 
   - ../../../base/cert-manager
   - ../../../base/kubeflow
@@ -33,7 +34,6 @@ resources:
   # - ../../../base/tensorboard
   # - ../../../base/kubeflow-trainer
 
-  # - ../../../base/traefik
   # - ../../../base/gpu-operator
   # - ../../../base/elk
   # - ../../../base/spark

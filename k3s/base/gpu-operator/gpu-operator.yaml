@@ -17,6 +17,7 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: gpu-operator
+  namespace: gpu-operator
   labels:
     app.kubernetes.io/name: gpu-operator
     helm.sh/chart: gpu-operator-v24.9.2

@@ -6,26 +6,26 @@ resources:
 
   # - ../../../base/metrics-server
 
+  # - ../../../base/mysql
+  # - ../../../base/prometheus
+  # - ../../../base/minio
+  # - ../../../base/jenkins
+  # - ../../../base/traefik
   # - ../../../base/postgres
-  - ../../../base/mysql
   # - ../../../base/vault
-  - ../../../base/prometheus
-  - ../../../base/minio
-  - ../../../base/jenkins
   # - ../../../base/knative
-  - ../../../base/traefik
 
-  - ../../../base/cert-manager
-  - ../../../base/kubeflow
-  - ../../../base/istio
-  - ../../../base/oauth2-proxy
-  - ../../../base/dex
-  - ../../../base/kubeflow-centraldashboard
-  - ../../../base/kubeflow-admissionwebhook
-  - ../../../base/kubeflow-notebooks
+  # - ../../../base/cert-manager
+  # - ../../../base/kubeflow
+  # - ../../../base/istio
+  # - ../../../base/oauth2-proxy
+  # - ../../../base/dex
+  # - ../../../base/kubeflow-centraldashboard
+  # - ../../../base/kubeflow-admissionwebhook
+  # - ../../../base/kubeflow-notebooks
 
-  - ../../../base/gpu-operator
-  - ../../../base/redis
+  # - ../../../base/gpu-operator
+  # - ../../../base/redis
   # - ../../../base/strimzi
   # - ../../../base/trino
   # - ../../../base/kafka

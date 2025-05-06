@@ -8,10 +8,10 @@ resources:
 
   - ../../../base/mysql
   - ../../../base/prometheus
+  - ../../../base/traefik
   # - ../../../base/minio
   # - ../../../base/redis
   # - ../../../base/jenkins
-  # - ../../../base/traefik
   # - ../../../base/postgres
   # - ../../../base/vault
   # - ../../../base/knative

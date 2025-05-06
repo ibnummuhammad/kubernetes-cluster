@@ -16,21 +16,12 @@ resources:
   # - ../../../base/gpu-operator
 
   # - ../../../base/trino
-  # - ../../../base/spark
   # - ../../../base/strimzi
   # - ../../../base/kafka
-  # - ../../../base/airflow
-  # - ../../../base/dbt
   # - ../../../base/rabbitmq
-  # - ../../../base/flink
-  # - ../../../base/beam
-  # - ../../../base/iceberg
-  # - ../../../base/metabase
-  # - ../../../base/flyte
-  # - ../../../base/redis
-  # - ../../../base/elk
-  # - ../../../base/vllm
+  # - ../../../base/numaflow
 
+  # - ../../../base/spark
   # - ../../../base/metacontroller
   # - ../../../base/argo
 
@@ -45,10 +36,19 @@ resources:
   # - ../../../base/tensorboard
   # - ../../../base/kubeflow-trainer
 
-  # - ../../../base/numaflow
   # - ../../../base/neo4j
   # - ../../../base/milvus
   # - ../../../base/datahub
   # - ../../../base/hadoop
   # - ../../../base/hive
   # - ../../../base/mlflow
+  # - ../../../base/flink
+  # - ../../../base/beam
+  # - ../../../base/iceberg
+  # - ../../../base/metabase
+  # - ../../../base/flyte
+  # - ../../../base/redis
+  # - ../../../base/elk
+  # - ../../../base/vllm
+  # - ../../../base/airflow
+  # - ../../../base/dbt

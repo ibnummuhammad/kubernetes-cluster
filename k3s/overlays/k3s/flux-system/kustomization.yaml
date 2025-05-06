@@ -10,7 +10,7 @@ resources:
   - ../../../base/mysql
   - ../../../base/vault
   - ../../../base/prometheus
-  # - ../../../base/jenkins
+  - ../../../base/jenkins
   # - ../../../base/traefik
   # - ../../../base/minio
   # - ../../../base/gpu-operator

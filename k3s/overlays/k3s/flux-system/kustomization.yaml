@@ -24,8 +24,8 @@ resources:
   - ../../../base/kubeflow-admissionwebhook
   - ../../../base/kubeflow-notebooks
 
-  - ../../../base/strimzi
-  - ../../../base/gpu-operator
+  # - ../../../base/strimzi
+  # - ../../../base/gpu-operator
   # - ../../../base/trino
   # - ../../../base/kafka
   # - ../../../base/rabbitmq

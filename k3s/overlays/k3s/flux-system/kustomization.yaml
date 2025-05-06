@@ -18,6 +18,7 @@ resources:
   - ../../../base/oauth2-proxy
   - ../../../base/dex
   - ../../../base/kubeflow-centraldashboard
+  - ../../../base/kubeflow-admissionwebhook
   - ../../../base/kubeflow-notebooks
 
   # - ../../../base/knative

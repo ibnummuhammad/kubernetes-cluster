@@ -3,7 +3,6 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - cluster-roles.yaml
-  - admission-webhook/overlays/cert-manager
   - pvcviewer-controller/base
   - profiles/overlays/kubeflow
   - volumes-web-app/overlays/istio

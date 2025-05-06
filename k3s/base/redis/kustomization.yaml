@@ -5,3 +5,4 @@ resources:
   - namespaces.yaml
   - redis-operator.yaml
   - cluster.yaml
+  - database.yaml

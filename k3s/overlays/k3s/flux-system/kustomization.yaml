@@ -10,10 +10,10 @@ resources:
   - ../../../base/prometheus
   - ../../../base/traefik
   - ../../../base/minio
-  # - ../../../base/redis
-  # - ../../../base/jenkins
-  # - ../../../base/postgres
   - ../../../base/vault
+  - ../../../base/jenkins
+  # - ../../../base/redis
+  # - ../../../base/postgres
   # - ../../../base/knative
   # - ../../../base/gpu-operator
 

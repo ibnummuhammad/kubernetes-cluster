@@ -7,4 +7,4 @@ resources:
   - pvcviewer-controller/base
   - profiles/overlays/kubeflow
   - volumes-web-app/overlays/istio
-  # - user-namespace
+  - user-namespace

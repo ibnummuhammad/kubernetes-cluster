@@ -30,7 +30,6 @@ spec:
               operator: In
               values:
                 - orangepizero3
-                - raspberrypi
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim

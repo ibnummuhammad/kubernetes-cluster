@@ -25,6 +25,7 @@ resources:
   - ../../../base/kubeflow-notebooks
 
   - ../../../base/strimzi
+  - ../../../base/gpu-operator
   # - ../../../base/trino
   # - ../../../base/kafka
   # - ../../../base/rabbitmq
@@ -34,7 +35,6 @@ resources:
   # - ../../../base/tensorboard
   # - ../../../base/kubeflow-trainer
 
-  # - ../../../base/gpu-operator
   # - ../../../base/elk
   # - ../../../base/spark
   # - ../../../base/metacontroller

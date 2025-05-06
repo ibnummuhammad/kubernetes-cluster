@@ -19,10 +19,6 @@ resources:
   - ../../../base/dex
   - ../../../base/kubeflow-centraldashboard
   # - ../../../base/kubeflow-notebooks
-  # - ../../../base/kubeflow-pipelines
-  # - ../../../base/kserve
-  # - ../../../base/tensorboard
-  # - ../../../base/kubeflow-trainer
 
   # - ../../../base/knative
   # - ../../../base/trino
@@ -30,6 +26,10 @@ resources:
   # - ../../../base/kafka
   # - ../../../base/rabbitmq
   # - ../../../base/numaflow
+  # - ../../../base/kubeflow-pipelines
+  # - ../../../base/kserve
+  # - ../../../base/tensorboard
+  # - ../../../base/kubeflow-trainer
 
   # - ../../../base/traefik
   # - ../../../base/spark

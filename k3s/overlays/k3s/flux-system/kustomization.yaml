@@ -6,13 +6,13 @@ resources:
 
   # - ../../../base/metrics-server
 
-  - ../../../base/postgres
+  # - ../../../base/postgres
   - ../../../base/mysql
-  - ../../../base/vault
+  # - ../../../base/vault
   - ../../../base/prometheus
   - ../../../base/minio
   - ../../../base/jenkins
-  - ../../../base/knative
+  # - ../../../base/knative
   - ../../../base/traefik
 
   - ../../../base/cert-manager
@@ -36,6 +36,7 @@ resources:
   # - ../../../base/tensorboard
   # - ../../../base/kubeflow-trainer
 
+  # - ../../../base/vllm
   # - ../../../base/atlantis
   # - ../../../base/elk
   # - ../../../base/spark
@@ -52,6 +53,5 @@ resources:
   # - ../../../base/iceberg
   # - ../../../base/metabase
   # - ../../../base/flyte
-  # - ../../../base/vllm
   # - ../../../base/airflow
   # - ../../../base/dbt

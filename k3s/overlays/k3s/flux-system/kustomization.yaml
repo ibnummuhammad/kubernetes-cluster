@@ -11,7 +11,6 @@ resources:
   - ../../../base/vault
   - ../../../base/prometheus
   - ../../../base/minio
-  - ../../../base/knative
 
   - ../../../base/cert-manager
   - ../../../base/kubeflow
@@ -22,6 +21,7 @@ resources:
   - ../../../base/kubeflow-admissionwebhook
   - ../../../base/kubeflow-notebooks
 
+  # - ../../../base/knative
   # - ../../../base/trino
   # - ../../../base/strimzi
   # - ../../../base/kafka
@@ -32,9 +32,9 @@ resources:
   # - ../../../base/tensorboard
   # - ../../../base/kubeflow-trainer
 
+  - ../../../base/jenkins
   # - ../../../base/traefik
   # - ../../../base/spark
-  # - ../../../base/jenkins
   # - ../../../base/metacontroller
   # - ../../../base/argo
   # - ../../../base/gpu-operator

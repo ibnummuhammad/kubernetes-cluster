@@ -21,7 +21,7 @@ resources:
   # - ../../../base/rabbitmq
   # - ../../../base/numaflow
 
-  # - ../../../base/cert-manager
+  - ../../../base/cert-manager
   # - ../../../base/istio
   # - ../../../base/oauth2-proxy
   # - ../../../base/dex

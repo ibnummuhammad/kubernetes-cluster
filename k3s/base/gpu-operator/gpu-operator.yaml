@@ -409,6 +409,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   name: gpu-operator
+  namespace: gpu-operator
   labels:
     app.kubernetes.io/name: gpu-operator
     helm.sh/chart: gpu-operator-v24.9.2
@@ -520,6 +521,7 @@ kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: gpu-operator
+  namespace: gpu-operator
   labels:
     app.kubernetes.io/name: gpu-operator
     helm.sh/chart: gpu-operator-v24.9.2
@@ -881,6 +883,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: gpu-operator
+  namespace: gpu-operator
   labels:
     app.kubernetes.io/name: gpu-operator
     helm.sh/chart: gpu-operator-v24.9.2

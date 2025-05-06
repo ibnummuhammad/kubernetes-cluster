@@ -14,7 +14,6 @@ resources:
   - ../../../base/jenkins
   - ../../../base/knative
   - ../../../base/traefik
-  - ../../../base/gpu-operator
 
   - ../../../base/cert-manager
   - ../../../base/kubeflow
@@ -25,6 +24,7 @@ resources:
   - ../../../base/kubeflow-admissionwebhook
   - ../../../base/kubeflow-notebooks
 
+  - ../../../base/gpu-operator
   # - ../../../base/strimzi
   # - ../../../base/trino
   # - ../../../base/kafka

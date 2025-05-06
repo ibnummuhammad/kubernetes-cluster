@@ -34,7 +34,7 @@ resources:
   # - ../../../base/tensorboard
   # - ../../../base/kubeflow-trainer
 
-  # - ../../../base/gpu-operator
+  - ../../../base/gpu-operator
   # - ../../../base/elk
   # - ../../../base/spark
   # - ../../../base/metacontroller

@@ -24,8 +24,8 @@ resources:
   - ../../../base/kubeflow-admissionwebhook
   - ../../../base/kubeflow-notebooks
 
+  - ../../../base/strimzi
   # - ../../../base/trino
-  # - ../../../base/strimzi
   # - ../../../base/kafka
   # - ../../../base/rabbitmq
   # - ../../../base/numaflow

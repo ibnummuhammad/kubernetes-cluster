@@ -21,10 +21,6 @@ resources:
   # - ../../../base/rabbitmq
   # - ../../../base/numaflow
 
-  # - ../../../base/spark
-  # - ../../../base/metacontroller
-  # - ../../../base/argo
-
   # - ../../../base/cert-manager
   # - ../../../base/istio
   # - ../../../base/oauth2-proxy
@@ -35,6 +31,10 @@ resources:
   # - ../../../base/kserve
   # - ../../../base/tensorboard
   # - ../../../base/kubeflow-trainer
+
+  # - ../../../base/spark
+  # - ../../../base/metacontroller
+  # - ../../../base/argo
 
   # - ../../../base/neo4j
   # - ../../../base/milvus

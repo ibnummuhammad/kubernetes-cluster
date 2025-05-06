@@ -10,7 +10,6 @@ resources:
   - ../../../base/mysql
   - ../../../base/vault
   - ../../../base/prometheus
-  # - ../../../base/traefik
   # - ../../../base/minio
 
   # - ../../../base/trino
@@ -23,7 +22,7 @@ resources:
   - ../../../base/kubeflow
   - ../../../base/istio
   - ../../../base/oauth2-proxy
-  # - ../../../base/dex
+  - ../../../base/dex
   # - ../../../base/knative
   # - ../../../base/kubeflow-notebooks
   # - ../../../base/kubeflow-pipelines
@@ -31,6 +30,7 @@ resources:
   # - ../../../base/tensorboard
   # - ../../../base/kubeflow-trainer
 
+  # - ../../../base/traefik
   # - ../../../base/spark
   # - ../../../base/jenkins
   # - ../../../base/metacontroller

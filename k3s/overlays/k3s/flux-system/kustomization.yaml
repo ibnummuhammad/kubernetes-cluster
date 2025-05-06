@@ -6,11 +6,12 @@ resources:
 
   # - ../../../base/metrics-server
 
-  # - ../../../base/postgres
+  - ../../../base/postgres
+  - ../../../base/mysql
   - ../../../base/vault
   - ../../../base/prometheus
   # - ../../../base/jenkins
-  - ../../../base/mysql
+
   # - ../../../base/trino
   # - ../../../base/minio
   # - ../../../base/spark

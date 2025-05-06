@@ -11,9 +11,11 @@ resources:
   - ../../../base/vault
   - ../../../base/prometheus
   # - ../../../base/jenkins
+  # - ../../../base/traefik
+  # - ../../../base/minio
+  # - ../../../base/gpu-operator
 
   # - ../../../base/trino
-  # - ../../../base/minio
   # - ../../../base/spark
   # - ../../../base/strimzi
   # - ../../../base/kafka
@@ -50,5 +52,3 @@ resources:
   # - ../../../base/hadoop
   # - ../../../base/hive
   # - ../../../base/mlflow
-  # - ../../../base/traefik
-  # - ../../../base/gpu-operator

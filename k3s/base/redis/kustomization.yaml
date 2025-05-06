@@ -6,3 +6,4 @@ resources:
   - redis-operator.yaml
   - cluster.yaml
   - database.yaml
+  - apps.yaml

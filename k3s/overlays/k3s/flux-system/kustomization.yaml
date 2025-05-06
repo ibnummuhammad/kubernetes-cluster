@@ -25,7 +25,7 @@ resources:
   - ../../../base/kubeflow-notebooks
 
   # - ../../../base/strimzi
-  # - ../../../base/gpu-operator
+  - ../../../base/gpu-operator
   # - ../../../base/trino
   # - ../../../base/kafka
   # - ../../../base/rabbitmq

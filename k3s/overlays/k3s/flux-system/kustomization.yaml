@@ -25,6 +25,7 @@ resources:
   - ../../../base/kubeflow-notebooks
 
   - ../../../base/gpu-operator
+  - ../../../base/redis
   # - ../../../base/strimzi
   # - ../../../base/trino
   # - ../../../base/kafka
@@ -51,7 +52,6 @@ resources:
   # - ../../../base/iceberg
   # - ../../../base/metabase
   # - ../../../base/flyte
-  # - ../../../base/redis
   # - ../../../base/vllm
   # - ../../../base/airflow
   # - ../../../base/dbt

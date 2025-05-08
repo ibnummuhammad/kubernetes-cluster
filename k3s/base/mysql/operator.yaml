@@ -174,8 +174,8 @@ spec:
           readinessProbe:
             exec:
               command:
-              - cat
-              - /tmp/mysql-operator-ready
+                - cat
+                - /tmp/mysql-operator-ready
             initialDelaySeconds: 1
             periodSeconds: 3
           volumeMounts:
@@ -186,12 +186,21 @@ spec:
           securityContext:
             capabilities:
               drop:
-              - ALL
+                - ALL
             runAsUser: 2
             allowPrivilegeEscalation: false
             privileged: false
             readOnlyRootFilesystem: true
             runAsNonRoot: true
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: kubernetes.io/arch
+                    operator: In
+                    values:
+                      - amd64
       volumes:
         - name: mysqlsh-home
           emptyDir: {}

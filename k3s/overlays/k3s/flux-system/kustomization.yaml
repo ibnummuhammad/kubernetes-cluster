@@ -26,6 +26,7 @@ resources:
   # - ../../../base/kubeflow-admissionwebhook
   # - ../../../base/kubeflow-profiles
   # - ../../../base/kubeflow-pvcviewer
+  # - ../../../base/kubeflow-volumewebapp
   # - ../../../base/kubeflow-notebooks
 
   # - ../../../base/strimzi

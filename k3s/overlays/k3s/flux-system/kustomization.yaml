@@ -24,6 +24,7 @@ resources:
   # - ../../../base/dex
   # - ../../../base/kubeflow-centraldashboard
   # - ../../../base/kubeflow-admissionwebhook
+  # - ../../../base/kubeflow-profiles
   # - ../../../base/kubeflow-pvcviewer
   # - ../../../base/kubeflow-notebooks
 

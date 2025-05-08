@@ -12,7 +12,7 @@ resources:
   - ../../../base/traefik
   - ../../../base/minio
   - ../../../base/vault
-  - ../../../base/jenkins
+  # - ../../../base/jenkins
   - ../../../base/gpu-operator
   # - ../../../base/redis
   # - ../../../base/knative

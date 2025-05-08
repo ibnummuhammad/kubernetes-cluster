@@ -6,8 +6,8 @@ resources:
 
   # - ../../../base/metrics-server
 
-  - ../../../base/mysql
-  - ../../../base/postgres
+  # - ../../../base/mysql
+  # - ../../../base/postgres
   - ../../../base/prometheus
   - ../../../base/traefik
   - ../../../base/minio

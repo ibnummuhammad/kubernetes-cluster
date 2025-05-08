@@ -36,10 +36,11 @@ resources:
   # - ../../../base/tensorboard
   # - ../../../base/kubeflow-trainer
 
+  - ../../../base/spark
+  - ../../../base/flink
   # - ../../../base/vllm
   # - ../../../base/atlantis
   # - ../../../base/elk
-  - ../../../base/spark
   # - ../../../base/metacontroller
   # - ../../../base/argo
   # - ../../../base/neo4j
@@ -48,7 +49,6 @@ resources:
   # - ../../../base/hadoop
   # - ../../../base/hive
   # - ../../../base/mlflow
-  # - ../../../base/flink
   # - ../../../base/beam
   # - ../../../base/iceberg
   # - ../../../base/metabase

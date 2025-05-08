@@ -17,7 +17,7 @@ resources:
   # - ../../../base/redis
   # - ../../../base/knative
 
-  - ../../../base/cert-manager
+  # - ../../../base/cert-manager
   - ../../../base/kubeflow
   - ../../../base/istio
   - ../../../base/oauth2-proxy

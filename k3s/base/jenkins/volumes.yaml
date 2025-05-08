@@ -30,6 +30,11 @@ spec:
               operator: In
               values:
                 - orangepizero3
+                - nisahandra-ms-7d82
+                - asus-vivobook-14-asus-laptop-x407uf
+                - rog-1-0
+                - raspberrypi-93ca435d
+                - raspberrypi-f2d434ff
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim

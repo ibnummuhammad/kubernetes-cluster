@@ -39,7 +39,7 @@ resources:
   # - ../../../base/vllm
   # - ../../../base/atlantis
   # - ../../../base/elk
-  - ../../../base/spark
+  # - ../../../base/spark
   # - ../../../base/metacontroller
   # - ../../../base/argo
   # - ../../../base/neo4j

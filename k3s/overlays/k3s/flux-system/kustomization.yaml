@@ -37,7 +37,7 @@ resources:
   # - ../../../base/kubeflow-trainer
 
   - ../../../base/spark
-  - ../../../base/flink
+  # - ../../../base/flink
   # - ../../../base/vllm
   # - ../../../base/atlantis
   # - ../../../base/elk

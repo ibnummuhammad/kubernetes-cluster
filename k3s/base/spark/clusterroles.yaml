@@ -4,10 +4,10 @@ metadata:
   name: spark-operator-controller
   namespace: spark
   labels:
-    helm.sh/chart: spark-operator-2.0.2
+    helm.sh/chart: spark-operator-2.1.1
     app.kubernetes.io/name: spark-operator
     app.kubernetes.io/instance: spark-operator
-    app.kubernetes.io/version: "2.0.2"
+    app.kubernetes.io/version: "2.1.1"
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: controller
 rules:
@@ -17,14 +17,6 @@ rules:
       - nodes
     verbs:
       - get
-  - apiGroups:
-      - ""
-    resources:
-      - events
-    verbs:
-      - create
-      - update
-      - patch
   - apiGroups:
       - apiextensions.k8s.io
     resources:
@@ -38,10 +30,10 @@ metadata:
   name: spark-operator-webhook
   namespace: spark
   labels:
-    helm.sh/chart: spark-operator-2.0.2
+    helm.sh/chart: spark-operator-2.1.1
     app.kubernetes.io/name: spark-operator
     app.kubernetes.io/instance: spark-operator
-    app.kubernetes.io/version: "2.0.2"
+    app.kubernetes.io/version: "2.1.1"
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: webhook
 rules:
@@ -72,3 +64,4 @@ rules:
       - get
       - update
 ---
+

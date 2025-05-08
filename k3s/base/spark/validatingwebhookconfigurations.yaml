@@ -2,12 +2,11 @@ apiVersion: admissionregistration.k8s.io/v1
 kind: ValidatingWebhookConfiguration
 metadata:
   name: spark-operator-webhook
-  namespace: spark
   labels:
-    helm.sh/chart: spark-operator-2.0.2
+    helm.sh/chart: spark-operator-2.1.1
     app.kubernetes.io/name: spark-operator
     app.kubernetes.io/instance: spark-operator
-    app.kubernetes.io/version: "2.0.2"
+    app.kubernetes.io/version: "2.1.1"
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: webhook
 webhooks:
@@ -26,7 +25,7 @@ webhooks:
         - key: kubernetes.io/metadata.name
           operator: In
           values:
-            - spark
+            - default
     rules:
       - apiGroups: ["sparkoperator.k8s.io"]
         apiVersions: ["v1beta2"]
@@ -48,7 +47,7 @@ webhooks:
         - key: kubernetes.io/metadata.name
           operator: In
           values:
-            - spark
+            - default
     rules:
       - apiGroups: ["sparkoperator.k8s.io"]
         apiVersions: ["v1beta2"]

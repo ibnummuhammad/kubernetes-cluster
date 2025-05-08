@@ -4,10 +4,10 @@ metadata:
   name: spark-operator-controller
   namespace: spark
   labels:
-    helm.sh/chart: spark-operator-2.0.2
+    helm.sh/chart: spark-operator-2.1.1
     app.kubernetes.io/name: spark-operator
     app.kubernetes.io/instance: spark-operator
-    app.kubernetes.io/version: "2.0.2"
+    app.kubernetes.io/version: "2.1.1"
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: controller
 rules:
@@ -26,6 +26,20 @@ rules:
     verbs:
       - get
       - update
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: spark-operator-controller
+  namespace: default
+  labels:
+    helm.sh/chart: spark-operator-2.1.1
+    app.kubernetes.io/name: spark-operator
+    app.kubernetes.io/instance: spark-operator
+    app.kubernetes.io/version: "2.1.1"
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/component: controller
+rules:
   - apiGroups:
       - ""
     resources:
@@ -76,6 +90,14 @@ rules:
       - patch
       - delete
   - apiGroups:
+      - ""
+    resources:
+      - events
+    verbs:
+      - create
+      - update
+      - patch
+  - apiGroups:
       - extensions
       - networking.k8s.io
     resources:
@@ -84,6 +106,8 @@ rules:
       - get
       - create
       - delete
+      - list
+      - watch
   - apiGroups:
       - sparkoperator.k8s.io
     resources:
@@ -113,12 +137,12 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   name: spark-operator-spark
-  namespace: spark
+  namespace: default
   labels:
-    helm.sh/chart: spark-operator-2.0.2
+    helm.sh/chart: spark-operator-2.1.1
     app.kubernetes.io/name: spark-operator
     app.kubernetes.io/instance: spark-operator
-    app.kubernetes.io/version: "2.0.2"
+    app.kubernetes.io/version: "2.1.1"
     app.kubernetes.io/managed-by: Helm
 rules:
   - apiGroups:
@@ -144,10 +168,10 @@ metadata:
   name: spark-operator-webhook
   namespace: spark
   labels:
-    helm.sh/chart: spark-operator-2.0.2
+    helm.sh/chart: spark-operator-2.1.1
     app.kubernetes.io/name: spark-operator
     app.kubernetes.io/instance: spark-operator
-    app.kubernetes.io/version: "2.0.2"
+    app.kubernetes.io/version: "2.1.1"
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: webhook
 rules:
@@ -181,3 +205,52 @@ rules:
     verbs:
       - get
       - update
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: spark-operator-webhook
+  namespace: default
+  labels:
+    helm.sh/chart: spark-operator-2.1.1
+    app.kubernetes.io/name: spark-operator
+    app.kubernetes.io/instance: spark-operator
+    app.kubernetes.io/version: "2.1.1"
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/component: webhook
+rules:
+  - apiGroups:
+      - ""
+    resources:
+      - pods
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - ""
+    resources:
+      - resourcequotas
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - sparkoperator.k8s.io
+    resources:
+      - sparkapplications
+      - sparkapplications/status
+      - sparkapplications/finalizers
+      - scheduledsparkapplications
+      - scheduledsparkapplications/status
+      - scheduledsparkapplications/finalizers
+    verbs:
+      - get
+      - list
+      - watch
+      - create
+      - update
+      - patch
+      - delete
+---
+

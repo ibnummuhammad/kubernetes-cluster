@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: spark-operator-controller
+  namespace: spark
   labels:
     helm.sh/chart: spark-operator-2.1.1
     app.kubernetes.io/name: spark-operator
@@ -93,6 +94,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: spark-operator-webhook
+  namespace: spark
   labels:
     helm.sh/chart: spark-operator-2.1.1
     app.kubernetes.io/name: spark-operator

@@ -3,7 +3,6 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - cluster-roles.yaml
-  - pvcviewer-controller/base
   - profiles/overlays/kubeflow
   - volumes-web-app/overlays/istio
   # - user-namespace

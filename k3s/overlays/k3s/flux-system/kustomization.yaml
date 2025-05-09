@@ -40,7 +40,7 @@ resources:
   # - ../../../base/tensorboard
   # - ../../../base/kubeflow-trainer
 
-  - ../../../base/spark
+  # - ../../../base/spark
   # - ../../../base/flink
   # - ../../../base/vllm
   # - ../../../base/atlantis

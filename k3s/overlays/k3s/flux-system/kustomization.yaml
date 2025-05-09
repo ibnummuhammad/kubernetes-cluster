@@ -17,28 +17,28 @@ resources:
   # - ../../../base/redis
   # - ../../../base/knative
 
-  - ../../../base/cert-manager
-  - ../../../base/kubeflow
-  - ../../../base/istio
-  - ../../../base/oauth2-proxy
-  - ../../../base/dex
-  - ../../../base/kubeflow-centraldashboard
-  - ../../../base/kubeflow-admissionwebhook
-  - ../../../base/kubeflow-profiles
-  # - ../../../base/kubeflow-pvcviewer
-  - ../../../base/kubeflow-volumeswebapp
-  - ../../../base/kubeflow-notebooks
-  - ../../../base/kubeflow-usernamespace
+  # - ../../../base/cert-manager
+  # - ../../../base/kubeflow
+  # - ../../../base/istio
+  # - ../../../base/oauth2-proxy
+  # - ../../../base/dex
+  # - ../../../base/kubeflow-centraldashboard
+  # - ../../../base/kubeflow-admissionwebhook
+  # - ../../../base/kubeflow-profiles
+  # - ../../../base/kubeflow-volumeswebapp
+  # - ../../../base/kubeflow-notebooks
+  # - ../../../base/kubeflow-usernamespace
 
   # - ../../../base/strimzi
   # - ../../../base/trino
   # - ../../../base/kafka
   # - ../../../base/rabbitmq
   # - ../../../base/numaflow
-  # - ../../../base/kubeflow-pipelines
   # - ../../../base/kserve
   # - ../../../base/tensorboard
+  # - ../../../base/kubeflow-pvcviewer
   # - ../../../base/kubeflow-trainer
+  # - ../../../base/kubeflow-pipelines
 
   # - ../../../base/spark
   # - ../../../base/flink

@@ -27,7 +27,7 @@ resources:
   - ../../../base/kubeflow-profiles
   # - ../../../base/kubeflow-pvcviewer
   - ../../../base/kubeflow-volumeswebapp
-  # - ../../../base/kubeflow-notebooks
+  - ../../../base/kubeflow-notebooks
   # - ../../../base/kubeflow-usernamespace
 
   # - ../../../base/strimzi

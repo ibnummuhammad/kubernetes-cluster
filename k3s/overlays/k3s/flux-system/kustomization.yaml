@@ -17,17 +17,16 @@ resources:
   # - ../../../base/redis
   # - ../../../base/knative
 
-  - ../../../base/cert-manager
-  - ../../../base/kubeflow
-  - ../../../base/istio
-  - ../../../base/oauth2-proxy
-  - ../../../base/dex
-  - ../../../base/kubeflow-centraldashboard
-  - ../../../base/kubeflow-admissionwebhook
-  - ../../../base/kubeflow-profiles
-  # - ../../../base/kubeflow-volumeswebapp
-  - ../../../base/kubeflow-notebooks
-  - ../../../base/kubeflow-usernamespace
+  # - ../../../base/cert-manager
+  # - ../../../base/kubeflow
+  # - ../../../base/istio
+  # - ../../../base/oauth2-proxy
+  # - ../../../base/dex
+  # - ../../../base/kubeflow-centraldashboard
+  # - ../../../base/kubeflow-admissionwebhook
+  # - ../../../base/kubeflow-profiles
+  # - ../../../base/kubeflow-notebooks
+  # - ../../../base/kubeflow-usernamespace
 
   # - ../../../base/strimzi
   # - ../../../base/trino
@@ -36,6 +35,7 @@ resources:
   # - ../../../base/numaflow
   # - ../../../base/kserve
   # - ../../../base/tensorboard
+  # - ../../../base/kubeflow-volumeswebapp
   # - ../../../base/kubeflow-pvcviewer
   # - ../../../base/kubeflow-trainer
   # - ../../../base/kubeflow-pipelines

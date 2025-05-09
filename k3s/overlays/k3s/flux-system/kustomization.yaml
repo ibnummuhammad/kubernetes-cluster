@@ -13,7 +13,7 @@ resources:
   # - ../../../base/minio
   # - ../../../base/vault
   # - ../../../base/jenkins
-  - ../../../base/gpu-operator
+  # - ../../../base/gpu-operator
   # - ../../../base/redis
   - ../../../base/knative
 
@@ -28,7 +28,7 @@ resources:
   - ../../../base/kubeflow-notebooks
   - ../../../base/kubeflow-usernamespace
 
-  - ../../../base/spark
+  # - ../../../base/spark
   # - ../../../base/strimzi
   # - ../../../base/trino
   # - ../../../base/kafka

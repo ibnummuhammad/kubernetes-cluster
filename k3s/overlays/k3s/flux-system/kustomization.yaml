@@ -17,16 +17,16 @@ resources:
   # - ../../../base/redis
   # - ../../../base/knative
 
-  # - ../../../base/cert-manager
-  # - ../../../base/kubeflow
-  # - ../../../base/istio
-  # - ../../../base/oauth2-proxy
-  # - ../../../base/dex
-  # - ../../../base/kubeflow-centraldashboard
-  # - ../../../base/kubeflow-admissionwebhook
-  # - ../../../base/kubeflow-profiles
+  - ../../../base/cert-manager
+  - ../../../base/kubeflow
+  - ../../../base/istio
+  - ../../../base/oauth2-proxy
+  - ../../../base/dex
+  - ../../../base/kubeflow-centraldashboard
+  - ../../../base/kubeflow-admissionwebhook
+  - ../../../base/kubeflow-profiles
   # - ../../../base/kubeflow-pvcviewer
-  # - ../../../base/kubeflow-volumeswebapp
+  - ../../../base/kubeflow-volumeswebapp
   # - ../../../base/kubeflow-notebooks
   # - ../../../base/kubeflow-usernamespace
 

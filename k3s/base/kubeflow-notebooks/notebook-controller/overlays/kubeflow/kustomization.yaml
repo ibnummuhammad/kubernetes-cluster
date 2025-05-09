@@ -9,5 +9,5 @@ configMapGenerator:
 - name: config
   behavior: merge
   literals:
-  - USE_ISTIO=true
+  - USE_ISTIO=false
   - ISTIO_GATEWAY=kubeflow/kubeflow-gateway

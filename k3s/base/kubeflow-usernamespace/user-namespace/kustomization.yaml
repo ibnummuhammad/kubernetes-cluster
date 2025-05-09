@@ -17,7 +17,6 @@ replacements:
       fieldPath: data.user
       kind: ConfigMap
       name: default-install-config
-      namespace: default
       version: v1
     targets:
       - fieldPaths:
@@ -31,7 +30,6 @@ replacements:
       fieldPath: data.profile-name
       kind: ConfigMap
       name: default-install-config
-      namespace: default
       version: v1
     targets:
       - fieldPaths:

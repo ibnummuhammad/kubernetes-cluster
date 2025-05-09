@@ -3,12 +3,14 @@ kind: Kustomization
 resources:
   - crds
   - namespaces.yaml
-  - serviceaccounts.yaml
-  - clusterroles.yaml
-  - clusterrolebindings.yaml
-  - roles.yaml
-  - rolebindings.yaml
-  - services.yaml
-  - deployments.yaml
-  - mutatingwebhookconfigurations.yaml
-  - validatingwebhookconfigurations.yaml
+  - spark-operator.yaml
+
+  # - serviceaccounts.yaml
+  # - clusterroles.yaml
+  # - clusterrolebindings.yaml
+  # - roles.yaml
+  # - rolebindings.yaml
+  # - services.yaml
+  # - deployments.yaml
+  # - mutatingwebhookconfigurations.yaml
+  # - validatingwebhookconfigurations.yaml

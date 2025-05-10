@@ -28,7 +28,6 @@ resources:
   # - ../../../base/kubeflow-notebooks
   # - ../../../base/kubeflow-usernamespace
 
-  - ../../../base/atlantis
   # - ../../../base/spark
   # - ../../../base/strimzi
   # - ../../../base/trino
@@ -42,6 +41,7 @@ resources:
   # - ../../../base/kubeflow-trainer
   # - ../../../base/kubeflow-pipelines
 
+  # - ../../../base/atlantis
   # - ../../../base/flink
   # - ../../../base/vllm
   # - ../../../base/elk

@@ -3,3 +3,9 @@ kind: Kustomization
 resources:
   - serving-crds.yaml
   - serving-core.yaml
+patches:
+  - path: config-domain-patch.yaml
+    target:
+      kind: ConfigMap
+      name: config-domain
+      namespace: knative-serving

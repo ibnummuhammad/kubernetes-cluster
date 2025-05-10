@@ -9,7 +9,7 @@ resources:
   - ../../../base/mysql
   # - ../../../base/postgres
   # - ../../../base/prometheus
-  # - ../../../base/traefik
+  - ../../../base/traefik
   - ../../../base/minio
   # - ../../../base/vault
   # - ../../../base/jenkins

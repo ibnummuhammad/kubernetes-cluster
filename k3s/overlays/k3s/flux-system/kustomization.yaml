@@ -43,7 +43,7 @@ resources:
 
   # - ../../../base/flink
   # - ../../../base/vllm
-  # - ../../../base/atlantis
+  - ../../../base/atlantis
   # - ../../../base/elk
   # - ../../../base/metacontroller
   # - ../../../base/argo

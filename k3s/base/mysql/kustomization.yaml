@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
   - namespaces.yaml
   - crds.yaml
-  - operator.yaml
-  - secrets.yaml
-  - innodb.yaml
+  - mysql-operator/templates
+  # - operator.yaml
+  # - secrets.yaml
+  # - innodb.yaml

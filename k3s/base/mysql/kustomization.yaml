@@ -3,6 +3,8 @@ kind: Kustomization
 resources:
   - namespaces.yaml
   - crds.yaml
+  - gateway.yaml
+  - virtual-service.yaml
 
   # - mysql-operator-930-224/templates
   - mysql-operator-920-223

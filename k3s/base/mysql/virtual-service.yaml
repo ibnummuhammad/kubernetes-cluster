@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: mysql-virtualservice
+  namespace: mysql
+spec:
+  hosts:
+    - "mysql.rumahdaud.com" # Match the hostname in the Gateway
+  gateways:
+    - mysql-gateway
+  http:
+    - route:
+        - destination:
+            host: mysql-service
+            port:
+              number: 3306

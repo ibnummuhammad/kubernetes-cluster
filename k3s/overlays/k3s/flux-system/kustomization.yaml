@@ -12,11 +12,11 @@ resources:
   # - ../../../base/traefik
   # - ../../../base/minio
   # - ../../../base/vault
-  - ../../../base/jenkins
+  # - ../../../base/jenkins
   # - ../../../base/gpu-operator
   # - ../../../base/redis
-  - ../../../base/istio
-  - ../../../base/knative
+  # - ../../../base/istio
+  # - ../../../base/knative
 
   # - ../../../base/cert-manager
   # - ../../../base/kubeflow

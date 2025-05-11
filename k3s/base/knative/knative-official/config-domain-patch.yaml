@@ -4,5 +4,4 @@ metadata:
   name: config-domain
   namespace: knative-serving
 data:
-  example.com: ""
   rumahdaud.com: ""

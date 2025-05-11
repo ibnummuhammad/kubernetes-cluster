@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: jenkins-virtualservice
+  namespace: jenkins
+spec:
+  hosts:
+    - "jenkins.example.com" # Match the hostname in the Gateway
+  gateways:
+    - jenkins-gateway
+  http:
+    - route:
+        - destination:
+            host: jenkins-service
+            port:
+              number: 8080 # Replace with the port your Jenkins service is listening on

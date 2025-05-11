@@ -5,7 +5,7 @@ metadata:
   namespace: jenkins
 spec:
   hosts:
-    - "jenkins.example.com" # Match the hostname in the Gateway
+    - "jenkins.rumahdaud.com" # Match the hostname in the Gateway
   gateways:
     - jenkins-gateway
   http:

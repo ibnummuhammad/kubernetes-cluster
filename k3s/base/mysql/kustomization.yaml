@@ -6,3 +6,4 @@ resources:
 
   - mysql-operator-930-224/templates
   # - mysql-operator-920-223
+  # - mysql-kubeflow

@@ -1628,7 +1628,7 @@ metadata:
   annotations:
     knative.dev/example-checksum: "0573e07d"
 data:
-  _example: |
+  rumahdaud.com: |
     ################################
     #                              #
     #    EXAMPLE CONFIGURATION     #

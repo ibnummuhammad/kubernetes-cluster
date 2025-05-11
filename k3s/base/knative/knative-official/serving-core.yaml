@@ -1710,7 +1710,7 @@ data:
     # eg. '{{.Name}}-{{.Namespace}}.{{ index .Annotations "sub"}}.{{.Domain}}'
     # and you have an annotation {"sub":"foo"}, then the generated template
     # would be {Name}-{Namespace}.foo.{Domain}
-    domain-template: "{{.Name}}.{{.Namespace}}.{{.Domain}}"
+    domain-template: "{{.Name}}.{{.Domain}}"
 
     # tag-template specifies the golang text template string to use
     # when constructing the DNS name for "tags" within the traffic blocks

@@ -1,8 +1,8 @@
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
-  name: helloworld-nodejs
-  namespace: default
+  name: frontend
+  namespace: frontend
 spec:
   template:
     spec:

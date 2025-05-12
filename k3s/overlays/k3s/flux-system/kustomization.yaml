@@ -19,6 +19,7 @@ resources:
   - ../../../base/knative
   - ../../../base/frontend
   - ../../../base/backend
+  - ../../../base/nginx
 
   # - ../../../base/cert-manager
   # - ../../../base/kubeflow

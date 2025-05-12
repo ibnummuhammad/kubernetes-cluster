@@ -55,6 +55,16 @@ spec:
         service.istio.io/canonical-revision: latest
         sidecar.istio.io/inject: "false"
     spec:
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution: null
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: kubernetes.io/arch
+                    operator: In
+                    values:
+                      - arm64
       containers:
         - args:
             - proxy

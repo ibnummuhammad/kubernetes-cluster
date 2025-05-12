@@ -3,4 +3,5 @@ kind: Kustomization
 resources:
   - namespaces.yaml
   - serviceaccounts.yaml
+  - roles.yaml
   - nginx.yaml

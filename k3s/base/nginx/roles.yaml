@@ -91,3 +91,27 @@ rules:
     verbs:
       - create
       - patch
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name:  nginx-ingress-nginx-admission
+  namespace: nginx
+  annotations:
+    "helm.sh/hook": pre-install,pre-upgrade,post-install,post-upgrade
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
+  labels:
+    helm.sh/chart: ingress-nginx-3.15.2
+    app.kubernetes.io/name: ingress-nginx
+    app.kubernetes.io/instance: nginx
+    app.kubernetes.io/version: "0.41.2"
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/component: admission-webhook
+rules:
+  - apiGroups:
+      - ""
+    resources:
+      - secrets
+    verbs:
+      - get
+      - create

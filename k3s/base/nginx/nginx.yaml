@@ -88,58 +88,6 @@ subjects:
     name: nginx-ingress-nginx
     namespace: nginx
 ---
-# Source: ingress-nginx/templates/controller-service-webhook.yaml
-apiVersion: v1
-kind: Service
-metadata:
-  labels:
-    helm.sh/chart: ingress-nginx-3.15.2
-    app.kubernetes.io/name: ingress-nginx
-    app.kubernetes.io/instance: nginx
-    app.kubernetes.io/version: "0.41.2"
-    app.kubernetes.io/managed-by: Helm
-    app.kubernetes.io/component: controller
-  name: nginx-ingress-nginx-controller-admission
-spec:
-  type: ClusterIP
-  ports:
-    - name: https-webhook
-      port: 443
-      targetPort: webhook
-  selector:
-    app.kubernetes.io/name: ingress-nginx
-    app.kubernetes.io/instance: nginx
-    app.kubernetes.io/component: controller
----
-# Source: ingress-nginx/templates/controller-service.yaml
-apiVersion: v1
-kind: Service
-metadata:
-  annotations:
-  labels:
-    helm.sh/chart: ingress-nginx-3.15.2
-    app.kubernetes.io/name: ingress-nginx
-    app.kubernetes.io/instance: nginx
-    app.kubernetes.io/version: "0.41.2"
-    app.kubernetes.io/managed-by: Helm
-    app.kubernetes.io/component: controller
-  name: nginx-ingress-nginx-controller
-spec:
-  type: LoadBalancer
-  ports:
-    - name: http
-      port: 80
-      protocol: TCP
-      targetPort: http
-    - name: https
-      port: 443
-      protocol: TCP
-      targetPort: https
-  selector:
-    app.kubernetes.io/name: ingress-nginx
-    app.kubernetes.io/instance: nginx
-    app.kubernetes.io/component: controller
----
 # Source: ingress-nginx/templates/controller-deployment.yaml
 apiVersion: apps/v1
 kind: Deployment

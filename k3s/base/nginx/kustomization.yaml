@@ -6,4 +6,5 @@ resources:
   - roles.yaml
   - rolebindings.yaml
   - configmaps.yaml
+  - services.yaml
   - nginx.yaml

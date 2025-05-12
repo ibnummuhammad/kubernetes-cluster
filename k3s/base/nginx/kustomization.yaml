@@ -4,4 +4,5 @@ resources:
   - namespaces.yaml
   - serviceaccounts.yaml
   - roles.yaml
+  - rolebindings.yaml
   - nginx.yaml

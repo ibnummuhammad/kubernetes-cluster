@@ -18,7 +18,7 @@ resources:
   - ../../../base/istio
   - ../../../base/knative
   # - ../../../base/frontend
-  # - ../../../base/backend
+  - ../../../base/backend
 
   # - ../../../base/cert-manager
   # - ../../../base/kubeflow

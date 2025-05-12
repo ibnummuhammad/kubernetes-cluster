@@ -1,0 +1,13 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: backend-app
+  namespace: backend
+spec:
+  template:
+    spec:
+      containers:
+        - image: docker.io/ibnummuhammad/helloworld-java-spring
+          env:
+            - name: TARGET
+              value: "Spring Boot Sample v1"

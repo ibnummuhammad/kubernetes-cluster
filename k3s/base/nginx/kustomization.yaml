@@ -7,4 +7,5 @@ resources:
   - rolebindings.yaml
   - configmaps.yaml
   - services.yaml
+  - deployments.yaml
   - nginx.yaml

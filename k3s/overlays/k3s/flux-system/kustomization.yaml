@@ -17,7 +17,7 @@ resources:
   # - ../../../base/redis
   - ../../../base/istio
   - ../../../base/knative
-  # - ../../../base/frontend
+  - ../../../base/frontend
   - ../../../base/backend
 
   # - ../../../base/cert-manager

@@ -18,7 +18,7 @@ resources:
   - ../../../base/knative
   - ../../../base/backend
   # - ../../../base/frontend
-  - ../../../base/nginx
+  # - ../../../base/nginx
 
   # - ../../../base/traefik
   # - ../../../base/cert-manager

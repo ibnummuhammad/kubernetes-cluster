@@ -9,6 +9,7 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: controller
   name: nginx-ingress-nginx-controller
+  namespace: nginx
 spec:
   selector:
     matchLabels:

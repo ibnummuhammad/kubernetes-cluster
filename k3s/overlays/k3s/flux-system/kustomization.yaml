@@ -9,9 +9,8 @@ resources:
   - ../../../base/mysql
   - ../../../base/postgres
   # - ../../../base/prometheus
-  # - ../../../base/traefik
   # - ../../../base/minio
-  # - ../../../base/vault
+  - ../../../base/vault
   - ../../../base/jenkins
   # - ../../../base/gpu-operator
   # - ../../../base/redis
@@ -21,6 +20,7 @@ resources:
   - ../../../base/backend
   - ../../../base/nginx
 
+  # - ../../../base/traefik
   # - ../../../base/cert-manager
   # - ../../../base/kubeflow
   # - ../../../base/oauth2-proxy

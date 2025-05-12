@@ -419,22 +419,6 @@ webhooks:
         name: nginx-ingress-nginx-controller-admission
         path: /networking/v1beta1/ingresses
 ---
-# Source: ingress-nginx/templates/admission-webhooks/job-patch/serviceaccount.yaml
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: nginx-ingress-nginx-admission
-  annotations:
-    "helm.sh/hook": pre-install,pre-upgrade,post-install,post-upgrade
-    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
-  labels:
-    helm.sh/chart: ingress-nginx-3.15.2
-    app.kubernetes.io/name: ingress-nginx
-    app.kubernetes.io/instance: nginx
-    app.kubernetes.io/version: "0.41.2"
-    app.kubernetes.io/managed-by: Helm
-    app.kubernetes.io/component: admission-webhook
----
 # Source: ingress-nginx/templates/admission-webhooks/job-patch/clusterrole.yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole

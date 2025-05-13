@@ -19,18 +19,18 @@ metadata:
   namespace: istio-system
 spec:
   ports:
-  - name: status-port
-    port: 15021
-    protocol: TCP
-    targetPort: 15021
-  - name: http2
-    port: 80
-    protocol: TCP
-    targetPort: 8080
-  - name: https
-    port: 443
-    protocol: TCP
-    targetPort: 8443
+    - name: status-port
+      port: 15021
+      protocol: TCP
+      targetPort: 15021
+    - name: http2
+      port: 80
+      protocol: TCP
+      targetPort: 8080
+    - name: https
+      port: 443
+      protocol: TCP
+      targetPort: 8443
   selector:
     app: istio-ingressgateway
     istio: ingressgateway
@@ -56,19 +56,19 @@ metadata:
   namespace: istio-system
 spec:
   ports:
-  - name: grpc-xds
-    port: 15010
-    protocol: TCP
-  - name: https-dns
-    port: 15012
-    protocol: TCP
-  - name: https-webhook
-    port: 443
-    protocol: TCP
-    targetPort: 15017
-  - name: http-monitoring
-    port: 15014
-    protocol: TCP
+    - name: grpc-xds
+      port: 15010
+      protocol: TCP
+    - name: https-dns
+      port: 15012
+      protocol: TCP
+    - name: https-webhook
+      port: 443
+      protocol: TCP
+      targetPort: 15017
+    - name: http-monitoring
+      port: 15014
+      protocol: TCP
   selector:
     app: istiod
     istio: pilot

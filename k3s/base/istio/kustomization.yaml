@@ -13,7 +13,7 @@ resources:
   - roles.yaml
   - rolebindings.yaml
   - horizontalpodautoscalers.yaml
+  - services.yaml
   - deployments.yaml
 
   # - istio-kubeflow
-  - istio-knative

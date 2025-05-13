@@ -12,6 +12,7 @@ resources:
   - poddisruptionbudgets.yaml
   - roles.yaml
   - rolebindings.yaml
+  - horizontalpodautoscalers.yaml
   - deployments.yaml
 
   # - istio-kubeflow

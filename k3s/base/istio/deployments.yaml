@@ -64,7 +64,7 @@ spec:
                   - key: kubernetes.io/arch
                     operator: In
                     values:
-                      - arm64
+                      - amd64
       containers:
         - args:
             - proxy
@@ -128,7 +128,7 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: spec.nodeName
-          image: ibnummuhammad/proxyv2:1.25.2
+          image: docker.io/istio/proxyv2:1.25.2
           name: istio-proxy
           ports:
             - containerPort: 15021

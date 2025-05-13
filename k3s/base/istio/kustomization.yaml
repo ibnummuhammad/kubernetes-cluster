@@ -9,6 +9,7 @@ resources:
   - validatingwebhookconfigurations.yaml
   - configmaps.yaml
   - mutatingwebhookconfigurations.yaml
+  - poddisruptionbudgets.yaml
   - deployments.yaml
 
   # - istio-kubeflow

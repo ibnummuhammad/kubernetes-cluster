@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
   - customresourcedefinitions.yaml
   - namespaces.yaml
+  - serviceaccounts.yaml
   - deployments.yaml
 
   # - istio-kubeflow

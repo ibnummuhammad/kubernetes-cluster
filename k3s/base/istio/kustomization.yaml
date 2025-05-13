@@ -10,6 +10,7 @@ resources:
   - configmaps.yaml
   - mutatingwebhookconfigurations.yaml
   - poddisruptionbudgets.yaml
+  - roles.yaml
   - deployments.yaml
 
   # - istio-kubeflow

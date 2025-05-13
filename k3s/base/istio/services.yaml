@@ -34,7 +34,7 @@ spec:
   selector:
     app: istio-ingressgateway
     istio: ingressgateway
-  type: ClusterIP
+  type: LoadBalancer
 ---
 apiVersion: v1
 kind: Service

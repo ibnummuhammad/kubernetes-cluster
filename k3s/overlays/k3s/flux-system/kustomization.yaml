@@ -17,7 +17,7 @@ resources:
   - ../../../base/istio
   - ../../../base/knative
   - ../../../base/backend
-  # - ../../../base/frontend
+  - ../../../base/frontend
   # - ../../../base/nginx
 
   # - ../../../base/traefik

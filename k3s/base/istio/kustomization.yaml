@@ -6,6 +6,7 @@ resources:
   - serviceaccounts.yaml
   - clusterroles.yaml
   - clusterrolebindings.yaml
+  - validatingwebhookconfigurations.yaml
   - deployments.yaml
 
   # - istio-kubeflow

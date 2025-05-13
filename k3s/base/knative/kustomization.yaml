@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
   - namespaces.yaml
   - configmaps.yaml
+  - gateways.yaml
 
   - knative-official
   # - knative-kubeflow

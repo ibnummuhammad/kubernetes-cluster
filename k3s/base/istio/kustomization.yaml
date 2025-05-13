@@ -8,6 +8,7 @@ resources:
   - clusterrolebindings.yaml
   - validatingwebhookconfigurations.yaml
   - configmaps.yaml
+  - mutatingwebhookconfigurations.yaml
   - deployments.yaml
 
   # - istio-kubeflow

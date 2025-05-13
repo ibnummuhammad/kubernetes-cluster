@@ -16,7 +16,7 @@ spec:
       app: webhook
   portLevelMtls:
     "8443":
-      mode: STRICT
+      mode: DISABLE
 ---
 apiVersion: "security.istio.io/v1beta1"
 kind: "PeerAuthentication"
@@ -34,4 +34,4 @@ spec:
       app: net-istio-webhook
   portLevelMtls:
     "8443":
-      mode: STRICT
+      mode: DISABLE

@@ -4,6 +4,7 @@ resources:
   - customresourcedefinitions.yaml
   - namespaces.yaml
   - serviceaccounts.yaml
+  - clusterroles.yaml
   - deployments.yaml
 
   # - istio-kubeflow

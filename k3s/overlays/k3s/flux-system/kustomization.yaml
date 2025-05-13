@@ -43,6 +43,7 @@ resources:
   # - ../../../base/kubeflow-trainer
   # - ../../../base/kubeflow-pipelines
 
+  # - ../../../base/vegeta
   # - ../../../base/nginx
   # - ../../../base/atlantis
   # - ../../../base/flink

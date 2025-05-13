@@ -11,6 +11,7 @@ resources:
   - mutatingwebhookconfigurations.yaml
   - poddisruptionbudgets.yaml
   - roles.yaml
+  - rolebindings.yaml
   - deployments.yaml
 
   # - istio-kubeflow

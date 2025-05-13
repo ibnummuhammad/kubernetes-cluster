@@ -4,6 +4,7 @@ resources:
   - namespaces.yaml
   - configmaps.yaml
   - gateways.yaml
+  - peersauthentications.yaml
 
   - knative-official
   # - knative-kubeflow

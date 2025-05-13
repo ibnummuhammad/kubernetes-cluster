@@ -15,7 +15,7 @@ resources:
   # - ../../../base/gpu-operator
   # - ../../../base/redis
   - ../../../base/istio
-  # - ../../../base/knative
+  - ../../../base/knative
   # - ../../../base/backend
   # - ../../../base/frontend
 

@@ -14,11 +14,10 @@ resources:
   # - ../../../base/jenkins
   # - ../../../base/gpu-operator
   # - ../../../base/redis
-  # - ../../../base/istio
+  - ../../../base/istio
   - ../../../base/knative
   - ../../../base/backend
   - ../../../base/frontend
-  # - ../../../base/nginx
 
   # - ../../../base/traefik
   # - ../../../base/cert-manager
@@ -44,6 +43,7 @@ resources:
   # - ../../../base/kubeflow-trainer
   # - ../../../base/kubeflow-pipelines
 
+  # - ../../../base/nginx
   # - ../../../base/atlantis
   # - ../../../base/flink
   # - ../../../base/vllm

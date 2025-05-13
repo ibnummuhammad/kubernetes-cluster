@@ -5,6 +5,7 @@ resources:
   - namespaces.yaml
   - serviceaccounts.yaml
   - clusterroles.yaml
+  - clusterrolebindings.yaml
   - deployments.yaml
 
   # - istio-kubeflow

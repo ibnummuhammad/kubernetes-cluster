@@ -60,5 +60,5 @@ pip install jwcrypto
 1. Run gen-jwt.py with `--jkws` to create new public key set and demo JWT
 
     ```bash
-    gen-jwt.py key.pem -jwks=./jwks.json --expire=3153600000 --claims=foo:bar > demo.jwt
+    python gen-jwt.py key.pem -jwks=./jwks.json --expire=3153600000 --claims=foo:bar > demo.jwt
     ```

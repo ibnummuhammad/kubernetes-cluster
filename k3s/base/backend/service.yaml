@@ -5,6 +5,10 @@ metadata:
   namespace: backend
 spec:
   template:
+    metadata:
+      annotations:
+        sidecar.istio.io/inject: "true"
+        sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
       containers:
         - image: docker.io/ibnummuhammad/helloworld-java-spring

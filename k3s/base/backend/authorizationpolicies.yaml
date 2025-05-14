@@ -23,4 +23,4 @@ spec:
     - from:
         - source:
             requestPrincipals:
-              ["ibnu0muhammad@gmail.com/ibnu0muhammad@gmail.com"]
+              ["testing@secure.istio.io/testing@secure.istio.io"]

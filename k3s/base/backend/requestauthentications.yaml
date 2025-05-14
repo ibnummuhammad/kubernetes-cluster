@@ -5,5 +5,5 @@ metadata:
   namespace: backend
 spec:
   jwtRules:
-    - issuer: ibnu0muhammad@gmail.com
+    - issuer: testing@secure.istio.io
       jwksUri: https://raw.githubusercontent.com/ibnummuhammad/kubernetes-cluster/refs/heads/main/backend/jwks.json

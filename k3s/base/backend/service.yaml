@@ -8,7 +8,6 @@ spec:
     metadata:
       annotations:
         autoscaling.knative.dev/min-scale: "1"
-        sidecar.istio.io/inject: "true"
     spec:
       containers:
         - image: docker.io/ibnummuhammad/helloworld-java-spring

@@ -6,4 +6,4 @@ metadata:
 spec:
   jwtRules:
     - issuer: testing@secure.istio.io
-      jwksUri: https://raw.githubusercontent.com/ibnummuhammad/kubernetes-cluster/refs/heads/main/k3s/base/backend/jwks.json
+      jwksUri: https://raw.githubusercontent.com/ibnummuhammad/kubernetes-cluster/refs/heads/main/backend/jwks.json

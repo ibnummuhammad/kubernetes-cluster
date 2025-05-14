@@ -18,7 +18,7 @@ metadata:
   name: require-jwt
   namespace: backend
 spec:
-  action: ALLOW
+  action: DENY
   rules:
     - from:
         - source:

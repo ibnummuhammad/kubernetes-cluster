@@ -34,6 +34,9 @@ Note the expiration date (`exp`) is very long in the future, so it can be tested
 
 ```bash
 TOKEN=$(curl https://raw.githubusercontent.com/istio/istio/master/security/tools/jwt/samples/demo.jwt -s)
+or
+TOKEN=$(cat demo.jwt) && echo "$TOKEN" | cut -d '.' -f2 - | base64 --decode -
+
 curl --header "Authorization: Bearer $TOKEN" $INGRESS_HOST/headers -s -o /dev/null -w "%{http_code}\n"
 ```
 

@@ -5,6 +5,9 @@ metadata:
   namespace: frontend
 spec:
   template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
     spec:
       containers:
         - image: docker.io/ibnummuhammad/helloworld-nodejs

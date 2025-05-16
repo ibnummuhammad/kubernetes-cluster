@@ -14,3 +14,22 @@ spec:
           env:
             - name: TARGET
               value: "Node.js Sample v1"
+              # Everything below here is oauth2-proxy configuration.
+        - name: oauth2-proxy
+          image: quay.io/oauth2-proxy/oauth2-proxy
+          command: ["/bin/oauth2-proxy"]
+          args: ["--config=/etc/proxy-config/oauth2_proxy.cfg"]
+          volumeMounts:
+          - name: proxy-config
+            mountPath: /etc/proxy-config/
+          # multi-container: enabled requires exactly one container
+          # to specify a port, so that we know where to route traffic
+          # We also currently limit where readiness and liveness 
+          # probes may occur to this container.
+          ports:
+          - containerPort: 8081
+
+        volumes:
+        - name: proxy-config
+          secret:
+            secretName: oauth2-proxy-config

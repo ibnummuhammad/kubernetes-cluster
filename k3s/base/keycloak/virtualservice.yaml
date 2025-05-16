@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: keycloak-virtualservice
+  namespace: keycloak
+spec:
+  hosts:
+    - "keycloak.rumahdaud.com" # Match the hostname in the Gateway
+  gateways:
+    - keycloak-gateway
+  http:
+    - route:
+        - destination:
+            host: keycloak-http
+            port:
+              number: 80 # Replace with the port your keycloak service is listening on

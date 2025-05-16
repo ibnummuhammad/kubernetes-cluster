@@ -19,7 +19,7 @@ resources:
   - ../../../base/backend
   # - ../../../base/frontend
   # - ../../../base/oauth2-proxy
-  - ../../../base/keycloak
+  # - ../../../base/keycloak
 
   # - ../../../base/traefik
   # - ../../../base/cert-manager

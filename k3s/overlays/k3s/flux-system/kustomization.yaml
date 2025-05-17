@@ -29,7 +29,7 @@ resources:
   # - ../../../base/kubeflow-notebooks
   # - ../../../base/kubeflow-usernamespace
 
-  - ../../../base/cert-manager
+  # - ../../../base/cert-manager
   # - ../../../base/traefik
   - ../../../base/spark
   # - ../../../base/knative-eventing
@@ -48,7 +48,7 @@ resources:
   # - ../../../base/vegeta
   # - ../../../base/nginx
   # - ../../../base/atlantis
-  - ../../../base/flink
+  # - ../../../base/flink
   # - ../../../base/vllm
   # - ../../../base/elk
   # - ../../../base/metacontroller

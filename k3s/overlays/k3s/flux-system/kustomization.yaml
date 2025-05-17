@@ -21,7 +21,7 @@ resources:
   # - ../../../base/oauth2-proxy
   # - ../../../base/keycloak
 
-  # - ../../../base/cert-manager
+  - ../../../base/cert-manager
   # - ../../../base/kubeflow
   # - ../../../base/dex
   # - ../../../base/kubeflow-centraldashboard

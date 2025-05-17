@@ -32,7 +32,7 @@ resources:
   # - ../../../base/kubeflow-usernamespace
 
   # - ../../../base/spark
-  - ../../../base/knative-eventing
+  # - ../../../base/knative-eventing
   - ../../../base/strimzi
   # - ../../../base/trino
   - ../../../base/kafka

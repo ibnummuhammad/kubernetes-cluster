@@ -31,7 +31,7 @@ resources:
   # - ../../../base/kubeflow-notebooks
   # - ../../../base/kubeflow-usernamespace
 
-  # - ../../../base/spark
+  - ../../../base/spark
   # - ../../../base/knative-eventing
   - ../../../base/strimzi
   # - ../../../base/trino

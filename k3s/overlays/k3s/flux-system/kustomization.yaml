@@ -4,7 +4,7 @@ resources:
   - gotk-components.yaml
   - gotk-sync.yaml
 
-  # - ../../../base/metrics-server
+  - ../../../base/metrics-server
 
   - ../../../base/mysql
   - ../../../base/postgres

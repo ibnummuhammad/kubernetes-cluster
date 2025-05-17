@@ -4,3 +4,4 @@ resources:
   # - namespaces.yaml
   - kafka.yaml
   - kafkanodepool.yaml
+  - kafkatopic.yaml

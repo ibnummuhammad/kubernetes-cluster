@@ -2,9 +2,12 @@ apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
   name: event-display
-  namespace: default
+  namespace: backend
 spec:
   template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
     spec:
       containers:
         - # This corresponds to

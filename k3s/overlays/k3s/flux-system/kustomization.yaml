@@ -9,7 +9,7 @@ resources:
   - ../../../base/mysql
   - ../../../base/postgres
   - ../../../base/prometheus
-  - ../../../base/minio
+  # - ../../../base/minio
   - ../../../base/vault
   - ../../../base/jenkins
   # - ../../../base/gpu-operator

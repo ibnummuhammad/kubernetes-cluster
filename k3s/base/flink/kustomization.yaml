@@ -4,3 +4,4 @@ resources:
   - customresourcedefinition.yaml
   - namespaces.yaml
   - flink-operator.yaml
+  - flinkdeployment.yaml

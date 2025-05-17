@@ -16,7 +16,6 @@ resources:
   # - ../../../base/redis
   - ../../../base/istio
   - ../../../base/knative-serving
-  - ../../../base/knative-eventing
   - ../../../base/backend
   # - ../../../base/frontend
   # - ../../../base/oauth2-proxy
@@ -33,7 +32,8 @@ resources:
   # - ../../../base/kubeflow-usernamespace
 
   # - ../../../base/spark
-  # - ../../../base/strimzi
+  - ../../../base/knative-eventing
+  - ../../../base/strimzi
   # - ../../../base/trino
   # - ../../../base/kafka
   # - ../../../base/rabbitmq

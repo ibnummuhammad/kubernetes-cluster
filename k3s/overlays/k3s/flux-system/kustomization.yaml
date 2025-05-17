@@ -29,7 +29,7 @@ resources:
   # - ../../../base/kubeflow-notebooks
   # - ../../../base/kubeflow-usernamespace
 
-  # - ../../../base/cert-manager
+  - ../../../base/cert-manager
   # - ../../../base/traefik
   - ../../../base/spark
   # - ../../../base/knative-eventing

@@ -5,3 +5,5 @@ resources:
   - namespaces.yaml
   - flink-operator.yaml
   - flinkdeployment.yaml
+  - gateway.yaml
+  - virtualservice.yaml

@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: flink-virtualservice
+  namespace: flink
+spec:
+  hosts:
+    - "flink.rumahdaud.com" # Match the hostname in the Gateway
+  gateways:
+    - flink-gateway
+  http:
+    - route:
+        - destination:
+            host: basic-example-rest
+            port:
+              number: 8081 # Replace with the port your flink service is listening on

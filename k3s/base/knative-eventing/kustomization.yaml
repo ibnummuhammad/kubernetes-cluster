@@ -6,5 +6,6 @@ resources:
   - eventing-kafka-controller.yaml
   - eventing-kafka-channel.yaml
   - eventing-kafka-broker.yaml
+  - eventing-kafka-source.yaml
 
   # - knative-kubeflow

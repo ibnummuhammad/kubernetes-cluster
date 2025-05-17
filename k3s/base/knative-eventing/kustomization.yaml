@@ -3,5 +3,7 @@ kind: Kustomization
 resources:
   - eventing-crds.yaml
   - eventing-core.yaml
+  - eventing-kafka-controller.yaml
+  - eventing-kafka-channel.yaml
 
   # - knative-kubeflow

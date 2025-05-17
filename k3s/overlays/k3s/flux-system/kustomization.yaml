@@ -35,7 +35,7 @@ resources:
   - ../../../base/knative-eventing
   - ../../../base/strimzi
   # - ../../../base/trino
-  # - ../../../base/kafka
+  - ../../../base/kafka
   # - ../../../base/rabbitmq
   # - ../../../base/numaflow
   # - ../../../base/kserve

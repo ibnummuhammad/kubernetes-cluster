@@ -21,7 +21,6 @@ resources:
   # - ../../../base/oauth2-proxy
   # - ../../../base/keycloak
 
-  # - ../../../base/traefik
   # - ../../../base/cert-manager
   # - ../../../base/kubeflow
   # - ../../../base/dex
@@ -31,6 +30,7 @@ resources:
   # - ../../../base/kubeflow-notebooks
   # - ../../../base/kubeflow-usernamespace
 
+  # - ../../../base/traefik
   - ../../../base/spark
   # - ../../../base/knative-eventing
   - ../../../base/strimzi

@@ -5,4 +5,4 @@ resources:
   - kafka.yaml
   - kafkanodepool.yaml
   - kafkatopic.yaml
-  - kafkasource.yaml
+  # - kafkasource.yaml

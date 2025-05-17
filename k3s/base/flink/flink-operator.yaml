@@ -475,7 +475,7 @@ spec:
       serviceAccountName: flink-operator
       containers:
         - name: flink-kubernetes-operator
-          image: flink-kubernetes-operator:latest
+          image: flink-kubernetes-operator:1.11.0
           imagePullPolicy: IfNotPresent
           command: ["/docker-entrypoint.sh", "operator"]
           ports:
@@ -531,7 +531,7 @@ spec:
               path: /
               port: health-port
         - name: flink-webhook
-          image: flink-kubernetes-operator:latest
+          image: flink-kubernetes-operator:1.11.0
           imagePullPolicy: IfNotPresent
           command: ["/docker-entrypoint.sh", "webhook"]
           env:

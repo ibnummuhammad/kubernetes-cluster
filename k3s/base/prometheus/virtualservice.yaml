@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: grafana-virtualservice
+  namespace: monitoring
+spec:
+  hosts:
+    - "grafana.rumahdaud.com" # Match the hostname in the Gateway
+  gateways:
+    - grafana-gateway
+  http:
+    - route:
+        - destination:
+            host: grafana
+            port:
+              number: 3000 # Replace with the port your grafana service is listening on

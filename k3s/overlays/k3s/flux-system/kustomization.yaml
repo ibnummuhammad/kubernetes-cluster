@@ -34,7 +34,7 @@ resources:
   # - ../../../base/trino
   # - ../../../base/kafka
   - ../../../base/cert-manager
-  # - ../../../base/flink
+  - ../../../base/flink
   # - ../../../base/traefik
   # - ../../../base/knative-eventing
   # - ../../../base/rabbitmq

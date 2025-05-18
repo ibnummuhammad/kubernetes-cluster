@@ -13,4 +13,4 @@ resources:
   - server-serviceaccount.yaml
   - server-service.yaml
   - server-statefulset.yaml
-  - tests
+  # - tests

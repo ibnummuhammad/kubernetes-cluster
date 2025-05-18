@@ -8,7 +8,7 @@ commonAnnotations:
 commonLabels:
   app.kubernetes.io/name: operator
 resources:
-  - namespaces.yaml
+  # - namespaces.yaml
   - crds/
   - secrets.yaml
   - serviceaccounts.yaml

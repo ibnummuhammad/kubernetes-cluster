@@ -3,4 +3,6 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - minio-kubeflow
+  - gateway.yaml
+  - virtualservice.yaml
   # - minio-dev.yaml

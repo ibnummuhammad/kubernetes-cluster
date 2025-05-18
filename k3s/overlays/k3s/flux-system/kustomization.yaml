@@ -32,7 +32,7 @@ resources:
   - ../../../base/spark
   - ../../../base/strimzi
   # - ../../../base/trino
-  # - ../../../base/kafka
+  - ../../../base/kafka
   - ../../../base/cert-manager
   - ../../../base/flink
   # - ../../../base/traefik

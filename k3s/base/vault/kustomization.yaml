@@ -6,6 +6,8 @@ kind: Kustomization
 resources:
   - namespaces.yaml
   - templates
+  - gateway.yaml
+  - virtualservice.yaml
 
   # - deployments.yaml
   # - injector-mutating-webhook.yaml

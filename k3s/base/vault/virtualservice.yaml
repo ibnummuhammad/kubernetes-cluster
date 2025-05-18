@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: vault-virtualservice
+  namespace: monitoring
+spec:
+  hosts:
+    - "vault.rumahdaud.com" # Match the hostname in the Gateway
+  gateways:
+    - vault-gateway
+  http:
+    - route:
+        - destination:
+            host: vault-internal
+            port:
+              number: 8200 # Replace with the port your vault service is listening on

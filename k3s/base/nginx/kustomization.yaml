@@ -8,5 +8,5 @@ resources:
   - configmaps.yaml
   - services.yaml
   - deployments.yaml
-  # - jobs.yaml
+  - jobs.yaml
   - nginx.yaml

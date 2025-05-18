@@ -47,7 +47,7 @@ resources:
   # - ../../../base/kubeflow-pipelines
 
   # - ../../../base/vegeta
-  - ../../../base/nginx
+  # - ../../../base/nginx
   # - ../../../base/atlantis
   # - ../../../base/vllm
   # - ../../../base/elk

@@ -7,7 +7,6 @@ resources:
   - injector-mutating-webhook.yaml
   - injector-serviceaccount.yaml
   - injector-service.yaml
-  - kustomization.yaml
   - server-clusterrolebinding.yaml
   - server-config-configmap.yaml
   - server-headless-service.yaml

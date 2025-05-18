@@ -16,7 +16,7 @@ resources:
   # - ../../../base/redis
   - ../../../base/istio
   - ../../../base/knative-serving
-  # - ../../../base/backend
+  - ../../../base/backend
   # - ../../../base/frontend
   # - ../../../base/oauth2-proxy
   # - ../../../base/keycloak

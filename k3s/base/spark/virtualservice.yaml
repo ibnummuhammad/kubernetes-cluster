@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: spark-virtualservice
+  namespace: monitoring
+spec:
+  hosts:
+    - "spark.rumahdaud.com" # Match the hostname in the Gateway
+  gateways:
+    - spark-gateway
+  http:
+    - route:
+        - destination:
+            host: spark-pi-ui-svc
+            port:
+              number: 4040 # Replace with the port your spark service is listening on

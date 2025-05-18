@@ -7,14 +7,5 @@ spec:
   type: Scala
   mode: cluster
   image: spark:3.5.1
-  sparkVersion: "3.5.1"
   mainClass: org.apache.spark.examples.SparkPi
   mainApplicationFile: local:///opt/spark/examples/jars/spark-examples_2.12-3.5.1.jar
-  driver:
-    cores: 1
-    memory: "512m"
-    serviceAccount: spark
-  executor:
-    cores: 1
-    instances: 2
-    memory: "512m"

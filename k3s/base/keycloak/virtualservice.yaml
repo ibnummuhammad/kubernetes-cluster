@@ -11,6 +11,6 @@ spec:
   http:
     - route:
         - destination:
-            host: keycloak-http
+            host: keycloak
             port:
-              number: 80 # Replace with the port your keycloak service is listening on
+              number: 8080 # Replace with the port your keycloak service is listening on

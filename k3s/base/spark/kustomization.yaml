@@ -4,6 +4,7 @@ resources:
   - crds
   - namespaces.yaml
   - spark-operator.yaml
+  - sparkapplication.yaml
 
   # - serviceaccounts.yaml
   # - clusterroles.yaml

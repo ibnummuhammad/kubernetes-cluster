@@ -10,7 +10,7 @@ resources:
   # - ../../../base/postgres
   # - ../../../base/prometheus
   # - ../../../base/minio
-  - ../../../base/vault
+  # - ../../../base/vault
   - ../../../base/jenkins
   # - ../../../base/gpu-operator
   # - ../../../base/redis

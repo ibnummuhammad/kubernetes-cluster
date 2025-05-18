@@ -10,8 +10,8 @@ resources:
   # - ../../../base/postgres
   # - ../../../base/prometheus
   # - ../../../base/minio
-  - ../../../base/vault
-  - ../../../base/jenkins
+  # - ../../../base/vault
+  # - ../../../base/jenkins
   # - ../../../base/gpu-operator
   # - ../../../base/redis
   # - ../../../base/istio
@@ -34,7 +34,7 @@ resources:
   # - ../../../base/trino
   # - ../../../base/kafka
   - ../../../base/cert-manager
-  - ../../../base/flink
+  # - ../../../base/flink
   # - ../../../base/traefik
   # - ../../../base/knative-eventing
   # - ../../../base/rabbitmq

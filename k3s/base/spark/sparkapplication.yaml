@@ -9,4 +9,3 @@ spec:
   image: spark:3.5.1
   mainClass: org.apache.spark.examples.SparkPi
   mainApplicationFile: local:///opt/spark/examples/jars/spark-examples_2.12-3.5.1.jar
-  serviceAccountName: spark-operator-spark

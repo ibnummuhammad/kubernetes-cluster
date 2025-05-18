@@ -29,7 +29,7 @@ resources:
   # - ../../../base/kubeflow-notebooks
   # - ../../../base/kubeflow-usernamespace
 
-  - ../../../base/spark
+  # - ../../../base/spark
   - ../../../base/strimzi
   # - ../../../base/trino
   # - ../../../base/kafka

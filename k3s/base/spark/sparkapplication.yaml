@@ -4,6 +4,8 @@ metadata:
   name: spark-pi
   namespace: default
 spec:
+  driver:
+    serviceAccount: spark-operator-spark
   type: Scala
   mode: cluster
   image: spark:3.5.1

@@ -10,5 +10,6 @@ resources:
   - ../../../base/jenkins
   - ../../../base/strimzi
   - ../../../base/kafka
+  - ../../../base/flink
   # - ../../../base/debezium
   # - ../../../base/vault

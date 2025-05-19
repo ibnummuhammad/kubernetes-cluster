@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: minio-virtualservice
+  namespace: minio
+spec:
+  hosts:
+    - "minio.rumahdaud.com" # Match the hostname in the Gateway
+  gateways:
+    - minio-gateway
+  http:
+    - route:
+        - destination:
+            host: minio-service
+            port:
+              number: 9000 # Replace with the port your minio service is listening on

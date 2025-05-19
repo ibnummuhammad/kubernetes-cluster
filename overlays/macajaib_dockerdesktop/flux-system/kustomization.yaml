@@ -12,5 +12,6 @@ resources:
   - ../../../base/kafka
   # - ../../../base/flink
   - ../../../base/trino
+  - ../../../base/minio
   # - ../../../base/debezium
   # - ../../../base/vault

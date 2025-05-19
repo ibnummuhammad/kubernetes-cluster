@@ -9,4 +9,6 @@ resources:
   - ../../../base/spark
   - ../../../base/jenkins
   - ../../../base/strimzi
+  - ../../../base/kafka
+  # - ../../../base/debezium
   # - ../../../base/vault

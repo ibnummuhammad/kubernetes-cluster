@@ -29,7 +29,7 @@ spec:
             - key: kubernetes.io/hostname
               operator: In
               values:
-                - raspberrypi4-4gb.rumahdaud.iot
+                - docker-desktop
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim

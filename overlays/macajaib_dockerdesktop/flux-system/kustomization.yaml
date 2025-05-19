@@ -6,4 +6,4 @@ resources:
 
   - ../../../base/istio
   - ../../../base/spark
-  # - ../../../base/jenkins
+  - ../../../base/jenkins

@@ -1,0 +1,98 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-trino-trino-worker
+  namespace: trino
+  labels:
+    helm.sh/chart: trino-1.38.0
+    app.kubernetes.io/name: trino
+    app.kubernetes.io/instance: my-trino
+    app.kubernetes.io/version: "474"
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/component: worker
+    trino.io/network-policy-protection: disabled
+  annotations: {}
+spec:
+  progressDeadlineSeconds: 600
+  revisionHistoryLimit: 10
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: trino
+      app.kubernetes.io/instance: my-trino
+      app.kubernetes.io/component: worker
+  template:
+    metadata:
+      annotations:
+        checksum/catalog-config: 05367dce64221ed7f11c8cd0a72c69d3c5b136fa76669493375ee6ad3c48c5a8
+        checksum/worker-config: de4810e0c35b87879d669e20cc06f618451c9ce3f00af14b58dc608660e80253
+      labels:
+        helm.sh/chart: trino-1.38.0
+        app.kubernetes.io/name: trino
+        app.kubernetes.io/instance: my-trino
+        app.kubernetes.io/version: "474"
+        app.kubernetes.io/managed-by: Helm
+        app.kubernetes.io/component: worker
+        trino.io/network-policy-protection: disabled
+    spec:
+      serviceAccountName: default
+      securityContext:
+        runAsGroup: 1000
+        runAsUser: 1000
+      volumes:
+        - name: config-volume
+          configMap:
+            name: my-trino-trino-worker
+        - name: catalog-volume
+          configMap:
+            name: my-trino-trino-catalog
+        - name: schemas-volume
+          configMap:
+            name: my-trino-trino-schemas-volume-worker
+      terminationGracePeriodSeconds: 30
+      containers:
+        - name: trino-worker
+          image: trinodb/trino:474
+          imagePullPolicy: IfNotPresent
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+                - ALL
+          env: []
+          envFrom: []
+          volumeMounts:
+            - mountPath: /etc/trino
+              name: config-volume
+            - mountPath: /etc/trino/catalog
+              name: catalog-volume
+            - mountPath: /etc/trino/schemas
+              name: schemas-volume
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /v1/info
+              port: http
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            timeoutSeconds: 5
+            failureThreshold: 6
+            successThreshold: 1
+          readinessProbe:
+            exec:
+              command: [/usr/lib/trino/bin/health-check]
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 5
+            failureThreshold: 6
+            successThreshold: 1
+          lifecycle:
+          resources: {}

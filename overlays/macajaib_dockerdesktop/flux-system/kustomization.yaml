@@ -8,4 +8,5 @@ resources:
   - ../../../base/knative-serving
   - ../../../base/spark
   - ../../../base/jenkins
+  - ../../../base/strimzi
   # - ../../../base/vault

@@ -4,9 +4,10 @@ resources:
   - crds
   - namespaces.yaml
   - spark-operator.yaml
-  - sparkapplication.yaml
-  - gateway.yaml
-  - virtualservice.yaml
+  # - sparkapplication.yaml
+
+  # - gateway.yaml
+  # - virtualservice.yaml
 
   # - serviceaccounts.yaml
   # - clusterroles.yaml

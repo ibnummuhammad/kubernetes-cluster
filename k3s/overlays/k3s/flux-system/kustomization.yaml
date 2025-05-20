@@ -58,7 +58,7 @@ resources:
   # - ../../../base/datahub
   # - ../../../base/hadoop
   # - ../../../base/hive
-  # - ../../../base/mlflow
+  - ../../../../base/mlflow
   # - ../../../base/beam
   # - ../../../base/iceberg
   # - ../../../base/metabase

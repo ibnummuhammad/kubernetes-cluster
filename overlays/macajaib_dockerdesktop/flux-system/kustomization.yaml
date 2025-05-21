@@ -4,14 +4,14 @@ resources:
   - gotk-components.yaml
   - gotk-sync.yaml
 
-  - ../../../base/istio
-  - ../../../base/knative-serving
-  - ../../../base/spark
-  - ../../../base/jenkins
-  - ../../../base/strimzi
-  - ../../../base/kafka
+  # - ../../../base/istio
+  # - ../../../base/knative-serving
+  # - ../../../base/spark
+  # - ../../../base/jenkins
+  # - ../../../base/strimzi
+  # - ../../../base/kafka
   # - ../../../base/flink
-  - ../../../base/trino
-  - ../../../base/minio
+  # - ../../../base/trino
+  # - ../../../base/minio
   # - ../../../base/debezium
   # - ../../../base/vault
